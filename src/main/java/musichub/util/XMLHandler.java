@@ -9,7 +9,7 @@ import org.xml.sax.SAXException;
 import org.w3c.dom.*;
 import java.io.IOException;
 import java.io.File;
-
+import java.io.InputStream;
 
 
 public class XMLHandler {
@@ -58,20 +58,32 @@ public class XMLHandler {
 	
 	public NodeList parseXMLFile (String filePath) {
 		NodeList elementNodes = null;
-		try {
-			Document document= documentBuilder.parse(new File(filePath));
-			Element root = document.getDocumentElement();
-			
-			elementNodes = root.getChildNodes();	
-		}
-		catch (SAXException e) 
-		{
-			e.printStackTrace();
-		}
-		catch (IOException e) 
-		{
-			e.printStackTrace();
-		}
+		
+		// The class loader that loaded the class
+        ClassLoader classLoader = getClass().getClassLoader();
+        InputStream inputStream = classLoader.getResourceAsStream(filePath);
+
+        // the stream holding the file content
+    
+			try {
+				Document document= documentBuilder.parse(inputStream);
+				Element root = document.getDocumentElement();
+				
+				elementNodes = root.getChildNodes();	
+			}
+			catch (SAXException e) 
+			{
+				e.printStackTrace();
+			}
+			catch (IOException e) 
+			{
+				e.printStackTrace();
+			}
+			catch (IllegalArgumentException e) 
+			{
+				System.out.println("File not found: " + filePath);
+			}
+		
 		return elementNodes;
 	}
 	
