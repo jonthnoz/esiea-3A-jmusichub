@@ -1,0 +1,2349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_baMMMJoIEeuM25Q6Xyzoqg" name="Project2">
+    <eAnnotations xmi:id="_buBuMJoIEeuM25Q6Xyzoqg" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_buBuMZoIEeuM25Q6Xyzoqg" source="codegen">
+        <details xmi:id="_buBuMpoIEeuM25Q6Xyzoqg" key="codegenDirectory" value="/Project/src"/>
+        <details xmi:id="_cSEPYJoIEeuM25Q6Xyzoqg" key="AssociatedSourceCode" value="/Project/src/musichub/business/NoPlayListFoundException.java;737494127/1;/Project/src/musichub/business/NoElementFoundException.java;2054433118/1;/Project/src/musichub/business/NoAlbumFoundException.java;3346117709/1;/Project/src/musichub/business/Category.java;4133015964/1;/Project/src/musichub/business/Genre.java;2692015837/1;/Project/src/musichub/business/Language.java;3398894146/1;/Project/src/musichub/business/MusicHub.java;1406160621/1;/Project/src/musichub/business/AudioElement.java;79560328/1;/Project/src/musichub/business/AudioBook.java;1908580974/1;/Project/src/musichub/business/Album.java;212481926/1;/Project/src/musichub/business/PlayList.java;197824526/1;/Project/src/musichub/business/Song.java;1763510623/1;/Project/src/musichub/main/Main.java;453367417/1;/Project/src/musichub/util/XMLHandler.java;645358203/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_cDvfgJoIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_cDvfgZoIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_cDwGkJoIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_cDwGkZoIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_cDwGkpoIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_cDwGk5oIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_cDwGlJoIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_cDwGlZoIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_cDwtoJoIEeuM25Q6Xyzoqg">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cCHH0JoIEeuM25Q6Xyzoqg" name="musichub">
+      <packagedElement xmi:type="uml:Package" xmi:id="_cCQ40JoIEeuM25Q6Xyzoqg" name="business">
+        <packagedElement xmi:type="uml:Class" xmi:id="_cDm8oJoIEeuM25Q6Xyzoqg" name="NoPlayListFoundException">
+          <generalization xmi:id="_cKvfYJoIEeuM25Q6Xyzoqg" general="_cKPwIJoIEeuM25Q6Xyzoqg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL4H0JoIEeuM25Q6Xyzoqg" name="NoPlayListFoundException" specification="_cDxUsJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cL4H0ZoIEeuM25Q6Xyzoqg" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cL4H0poIEeuM25Q6Xyzoqg" type="_cDm8oJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super(msg);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cDxUsJoIEeuM25Q6Xyzoqg" name="NoPlayListFoundException" method="_cL4H0JoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cDzw8JoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cDzw8ZoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cDx7wJoIEeuM25Q6Xyzoqg" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cDzw8poIEeuM25Q6Xyzoqg" type="_cDm8oJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cD0_EJoIEeuM25Q6Xyzoqg" name="NoElementFoundException">
+          <generalization xmi:id="_cKvfYZoIEeuM25Q6Xyzoqg" general="_cKPwIJoIEeuM25Q6Xyzoqg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL7yMJoIEeuM25Q6Xyzoqg" name="NoElementFoundException" specification="_cD2NMJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cL7yMZoIEeuM25Q6Xyzoqg" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cL7yMpoIEeuM25Q6Xyzoqg" type="_cD0_EJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super(msg);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cD2NMJoIEeuM25Q6Xyzoqg" name="NoElementFoundException" method="_cL7yMJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cD2NMpoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cD2NM5oIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cD2NMZoIEeuM25Q6Xyzoqg" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cD20QJoIEeuM25Q6Xyzoqg" type="_cD0_EJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cD3bUJoIEeuM25Q6Xyzoqg" name="NoAlbumFoundException">
+          <generalization xmi:id="_cKwGcJoIEeuM25Q6Xyzoqg" general="_cKPwIJoIEeuM25Q6Xyzoqg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL7yM5oIEeuM25Q6Xyzoqg" name="NoAlbumFoundException" specification="_cD4CYJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cL7yNJoIEeuM25Q6Xyzoqg" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cL7yNZoIEeuM25Q6Xyzoqg" type="_cD3bUJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super(msg);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cD4CYJoIEeuM25Q6Xyzoqg" name="NoAlbumFoundException" method="_cL7yM5oIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cD4pcJoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cD4pcZoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cD4CYZoIEeuM25Q6Xyzoqg" name="msg">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cD4pcpoIEeuM25Q6Xyzoqg" type="_cD3bUJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_cD5QgJoIEeuM25Q6Xyzoqg" name="Category">
+          <ownedAttribute xmi:id="_cLWjYJoIEeuM25Q6Xyzoqg" name="category" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_cD8T0JoIEeuM25Q6Xyzoqg" name="Category" visibility="private" method="_cL8ZQJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cD864JoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cD864ZoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cD8T0ZoIEeuM25Q6Xyzoqg" name="category">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cD864poIEeuM25Q6Xyzoqg" type="_cD5QgJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedLiteral xmi:id="_cD53kJoIEeuM25Q6Xyzoqg" name="YOUTH">
+            <specification xmi:type="uml:Expression" xmi:id="_cD6eoJoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMJ0oJoIEeuM25Q6Xyzoqg" value="&quot;youth&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD6eoZoIEeuM25Q6Xyzoqg" name="NOVEL">
+            <specification xmi:type="uml:Expression" xmi:id="_cD6eopoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMJ0oZoIEeuM25Q6Xyzoqg" value="&quot;novel&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD6eo5oIEeuM25Q6Xyzoqg" name="THEATER">
+            <specification xmi:type="uml:Expression" xmi:id="_cD6epJoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbsJoIEeuM25Q6Xyzoqg" value="&quot;theater&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD6epZoIEeuM25Q6Xyzoqg" name="DOCUMENTARY">
+            <specification xmi:type="uml:Expression" xmi:id="_cD7FsJoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbsZoIEeuM25Q6Xyzoqg" value="&quot;documentary&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD7FsZoIEeuM25Q6Xyzoqg" name="SPEECH">
+            <specification xmi:type="uml:Expression" xmi:id="_cD7FspoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbspoIEeuM25Q6Xyzoqg" value="&quot;speech&quot;"/>
+            </specification>
+          </ownedLiteral>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_cD-JAJoIEeuM25Q6Xyzoqg" name="Genre">
+          <ownedAttribute xmi:id="_cLcC8JoIEeuM25Q6Xyzoqg" name="genre" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_cEBMUJoIEeuM25Q6Xyzoqg" name="Genre" visibility="private" method="_cL9AUJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cEBzYJoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cEBzYZoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cEBMUZoIEeuM25Q6Xyzoqg" name="genre">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEBzYpoIEeuM25Q6Xyzoqg" type="_cD-JAJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedLiteral xmi:id="_cD-wEJoIEeuM25Q6Xyzoqg" name="JAZZ">
+            <specification xmi:type="uml:Expression" xmi:id="_cD-wEZoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbs5oIEeuM25Q6Xyzoqg" value="&quot;jazz&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD_XIJoIEeuM25Q6Xyzoqg" name="CLASSIC">
+            <specification xmi:type="uml:Expression" xmi:id="_cD_XIZoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbtJoIEeuM25Q6Xyzoqg" value="&quot;classic&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD_XIpoIEeuM25Q6Xyzoqg" name="HIPHOP">
+            <specification xmi:type="uml:Expression" xmi:id="_cD_XI5oIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbtZoIEeuM25Q6Xyzoqg" value="&quot;hiphop&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD_XJJoIEeuM25Q6Xyzoqg" name="ROCK">
+            <specification xmi:type="uml:Expression" xmi:id="_cD_XJZoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbtpoIEeuM25Q6Xyzoqg" value="&quot;rock&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD_XJpoIEeuM25Q6Xyzoqg" name="POP">
+            <specification xmi:type="uml:Expression" xmi:id="_cD_XJ5oIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbt5oIEeuM25Q6Xyzoqg" value="&quot;pop&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cD_-MJoIEeuM25Q6Xyzoqg" name="RAP">
+            <specification xmi:type="uml:Expression" xmi:id="_cD_-MZoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbuJoIEeuM25Q6Xyzoqg" value="&quot;rap&quot;"/>
+            </specification>
+          </ownedLiteral>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Enumeration" xmi:id="_cEDBgJoIEeuM25Q6Xyzoqg" name="Language">
+          <ownedAttribute xmi:id="_cLcqAJoIEeuM25Q6Xyzoqg" name="language" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_cEFdwJoIEeuM25Q6Xyzoqg" name="Language" visibility="private" method="_cL9nYJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cEGE0ZoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cEGE0poIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cEGE0JoIEeuM25Q6Xyzoqg" name="language">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEGE05oIEeuM25Q6Xyzoqg" type="_cEDBgJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedLiteral xmi:id="_cEDokJoIEeuM25Q6Xyzoqg" name="FRENCH">
+            <specification xmi:type="uml:Expression" xmi:id="_cEDokZoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbuZoIEeuM25Q6Xyzoqg" value="&quot;french&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cEDokpoIEeuM25Q6Xyzoqg" name="ENGLISH">
+            <specification xmi:type="uml:Expression" xmi:id="_cEEPoJoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbupoIEeuM25Q6Xyzoqg" value="&quot;english&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cEEPoZoIEeuM25Q6Xyzoqg" name="ITALIAN">
+            <specification xmi:type="uml:Expression" xmi:id="_cEEPopoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbu5oIEeuM25Q6Xyzoqg" value="&quot;italian&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cEEPo5oIEeuM25Q6Xyzoqg" name="SPANISH">
+            <specification xmi:type="uml:Expression" xmi:id="_cEEPpJoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbvJoIEeuM25Q6Xyzoqg" value="&quot;spanish&quot;"/>
+            </specification>
+          </ownedLiteral>
+          <ownedLiteral xmi:id="_cEEPpZoIEeuM25Q6Xyzoqg" name="GERMAN">
+            <specification xmi:type="uml:Expression" xmi:id="_cEEPppoIEeuM25Q6Xyzoqg">
+              <operand xmi:type="uml:LiteralString" xmi:id="_cMKbvZoIEeuM25Q6Xyzoqg" value="&quot;german&quot;"/>
+            </specification>
+          </ownedLiteral>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cEH6AJoIEeuM25Q6Xyzoqg" name="SortByDate" visibility="package">
+          <interfaceRealization xmi:id="_cK7soJoIEeuM25Q6Xyzoqg" client="_cEH6AJoIEeuM25Q6Xyzoqg" supplier="_cKwtgJoIEeuM25Q6Xyzoqg" contract="_cKwtgJoIEeuM25Q6Xyzoqg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMAqsJoIEeuM25Q6Xyzoqg" name="compare" specification="_cKZhIJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMAqsZoIEeuM25Q6Xyzoqg" name="a1" type="_cE_csJoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMAqspoIEeuM25Q6Xyzoqg" name="a2" type="_cE_csJoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMAqs5oIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return a1.getDate().compareTo(a2.getDate());&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cKZhIJoIEeuM25Q6Xyzoqg" name="compare" method="_cMAqsJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cKZhIZoIEeuM25Q6Xyzoqg" name="a1" type="_cE_csJoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cKZhIpoIEeuM25Q6Xyzoqg" name="a2" type="_cE_csJoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cKZhI5oIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cEJIIJoIEeuM25Q6Xyzoqg" name="SortByGenre" visibility="package">
+            <eAnnotations xmi:id="_cEJvMJoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cEJvMZoIEeuM25Q6Xyzoqg" key="sameFile"/>
+            </eAnnotations>
+            <interfaceRealization xmi:id="_cK3bMJoIEeuM25Q6Xyzoqg" client="_cEJIIJoIEeuM25Q6Xyzoqg" supplier="_cKwtgJoIEeuM25Q6Xyzoqg" contract="_cKwtgJoIEeuM25Q6Xyzoqg"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL9nY5oIEeuM25Q6Xyzoqg" name="compare" specification="_cKUBkJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL9nZJoIEeuM25Q6Xyzoqg" name="s1" type="_cFOtQJoIEeuM25Q6Xyzoqg"/>
+              <ownedParameter xmi:id="_cL9nZZoIEeuM25Q6Xyzoqg" name="s2" type="_cFOtQJoIEeuM25Q6Xyzoqg"/>
+              <ownedParameter xmi:id="_cL9nZpoIEeuM25Q6Xyzoqg" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return s1.getGenre().compareTo(s2.getGenre());&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cKUBkJoIEeuM25Q6Xyzoqg" name="compare" method="_cL9nY5oIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cKUBkZoIEeuM25Q6Xyzoqg" name="s1" type="_cFOtQJoIEeuM25Q6Xyzoqg"/>
+              <ownedParameter xmi:id="_cKUBkpoIEeuM25Q6Xyzoqg" name="s2" type="_cFOtQJoIEeuM25Q6Xyzoqg"/>
+              <ownedParameter xmi:id="_cKUBk5oIEeuM25Q6Xyzoqg" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cEK9UJoIEeuM25Q6Xyzoqg" name="SortByAuthor" visibility="package">
+            <eAnnotations xmi:id="_cELkYJoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cELkYZoIEeuM25Q6Xyzoqg" key="sameFile"/>
+            </eAnnotations>
+            <interfaceRealization xmi:id="_cK4pUJoIEeuM25Q6Xyzoqg" client="_cEK9UJoIEeuM25Q6Xyzoqg" supplier="_cKwtgJoIEeuM25Q6Xyzoqg" contract="_cKwtgJoIEeuM25Q6Xyzoqg"/>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-OcJoIEeuM25Q6Xyzoqg" name="compare" specification="_cKUooJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-OcZoIEeuM25Q6Xyzoqg" name="e1" type="_cEr6sJoIEeuM25Q6Xyzoqg"/>
+              <ownedParameter xmi:id="_cL-OcpoIEeuM25Q6Xyzoqg" name="e2" type="_cEr6sJoIEeuM25Q6Xyzoqg"/>
+              <ownedParameter xmi:id="_cL-Oc5oIEeuM25Q6Xyzoqg" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>return e1.getArtist().compareTo(e2.getArtist());&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cKUooJoIEeuM25Q6Xyzoqg" name="compare" method="_cL-OcJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cKVPsJoIEeuM25Q6Xyzoqg" name="e1" type="_cEr6sJoIEeuM25Q6Xyzoqg"/>
+              <ownedParameter xmi:id="_cKVPsZoIEeuM25Q6Xyzoqg" name="e2" type="_cEr6sJoIEeuM25Q6Xyzoqg"/>
+              <ownedParameter xmi:id="_cKVPspoIEeuM25Q6Xyzoqg" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+              </ownedParameter>
+            </ownedOperation>
+          </nestedClassifier>
+          <nestedClassifier xmi:type="uml:Class" xmi:id="_cEMygJoIEeuM25Q6Xyzoqg" name="MusicHub">
+            <eAnnotations xmi:id="_cEMygZoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cEMygpoIEeuM25Q6Xyzoqg" key="sameFile"/>
+            </eAnnotations>
+            <ownedAttribute xmi:id="_cLdREJoIEeuM25Q6Xyzoqg" name="albums" visibility="private" type="_cE_csJoIEeuM25Q6Xyzoqg" isOrdered="true" association="_cMRwcJoIEeuM25Q6Xyzoqg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cLd4IJoIEeuM25Q6Xyzoqg" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_cLefMZoIEeuM25Q6Xyzoqg" name="playlists" visibility="private" type="_cFJNsJoIEeuM25Q6Xyzoqg" isOrdered="true" association="_cMSXgZoIEeuM25Q6Xyzoqg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cLefMpoIEeuM25Q6Xyzoqg" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_cLfGQZoIEeuM25Q6Xyzoqg" name="elements" visibility="private" type="_cEr6sJoIEeuM25Q6Xyzoqg" isOrdered="true" association="_cMS-kZoIEeuM25Q6Xyzoqg">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cLftUJoIEeuM25Q6Xyzoqg" value="*"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_cLgUYZoIEeuM25Q6Xyzoqg" name="DIR" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_cLhigJoIEeuM25Q6Xyzoqg" value="System.getProperty(&quot;user.dir&quot;)"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_cLhigZoIEeuM25Q6Xyzoqg" name="ALBUMS_FILE_PATH" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_cLhigpoIEeuM25Q6Xyzoqg" value="DIR + &quot;/files/albums.xml&quot;"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_cLhig5oIEeuM25Q6Xyzoqg" name="PLAYLISTS_FILE_PATH" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_cLiJkJoIEeuM25Q6Xyzoqg" value="DIR + &quot;/files/playlists.xml&quot;"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_cLiJkZoIEeuM25Q6Xyzoqg" name="ELEMENTS_FILE_PATH" isLeaf="true" isStatic="true" isReadOnly="true">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_cLiJkpoIEeuM25Q6Xyzoqg" value="DIR + &quot;/files/elements.xml&quot;"/>
+            </ownedAttribute>
+            <ownedAttribute xmi:id="_cLiJk5oIEeuM25Q6Xyzoqg" name="xmlHandler" visibility="private" type="_cFYeQJoIEeuM25Q6Xyzoqg" association="_cMTloJoIEeuM25Q6Xyzoqg">
+              <defaultValue xmi:type="uml:LiteralString" xmi:id="_cLiJlJoIEeuM25Q6Xyzoqg" value="new XMLHandler()"/>
+            </ownedAttribute>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-OdJoIEeuM25Q6Xyzoqg" name="MusicHub" specification="_cEOAoJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-OdZoIEeuM25Q6Xyzoqg" type="_cEMygJoIEeuM25Q6Xyzoqg" direction="return"/>
+              <language>java</language>
+              <body>albums = new LinkedList&lt;Album>();&#xD;
+		playlists = new LinkedList&lt;PlayList>();&#xD;
+		elements = new LinkedList&lt;AudioElement>();&#xD;
+		this.loadElements();&#xD;
+		this.loadAlbums();&#xD;
+		this.loadPlaylists();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-OdpoIEeuM25Q6Xyzoqg" name="addElement" specification="_cKV2wJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-Od5oIEeuM25Q6Xyzoqg" name="element" type="_cEr6sJoIEeuM25Q6Xyzoqg"/>
+              <language>java</language>
+              <body>elements.add(element);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-OeJoIEeuM25Q6Xyzoqg" name="addAlbum" specification="_cKWd0ZoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-OeZoIEeuM25Q6Xyzoqg" name="album" type="_cE_csJoIEeuM25Q6Xyzoqg"/>
+              <language>java</language>
+              <body>albums.add(album);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-OepoIEeuM25Q6Xyzoqg" name="addPlaylist" specification="_cKXE4JoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-Oe5oIEeuM25Q6Xyzoqg" name="playlist" type="_cFJNsJoIEeuM25Q6Xyzoqg"/>
+              <language>java</language>
+              <body>playlists.add(playlist);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-1gJoIEeuM25Q6Xyzoqg" name="deletePlayList" specification="_cEOnsJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-1gZoIEeuM25Q6Xyzoqg" name="playListTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>PlayList thePlayList = null;&#xD;
+		boolean result = false;&#xD;
+		for (PlayList pl : playlists) {&#xD;
+			if (pl.getTitle().toLowerCase().equals(playListTitle.toLowerCase())) {&#xD;
+				thePlayList = pl;&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+		&#xD;
+		if (thePlayList != null)  		&#xD;
+			result = playlists.remove(thePlayList); &#xD;
+		if (!result) throw new NoPlayListFoundException(&quot;Playlist &quot; + playListTitle + &quot; not found!&quot;);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-1gpoIEeuM25Q6Xyzoqg" name="albums" specification="_cEP10JoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-1g5oIEeuM25Q6Xyzoqg" type="_cK53cJoIEeuM25Q6Xyzoqg" direction="return"/>
+              <language>java</language>
+              <body>return albums.listIterator();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-1hJoIEeuM25Q6Xyzoqg" name="playlists" specification="_cERrAJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-1hZoIEeuM25Q6Xyzoqg" type="_cK53cJoIEeuM25Q6Xyzoqg" direction="return"/>
+              <language>java</language>
+              <body>return playlists.listIterator();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-1hpoIEeuM25Q6Xyzoqg" name="elements" specification="_cES5IZoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-1h5oIEeuM25Q6Xyzoqg" type="_cK53cJoIEeuM25Q6Xyzoqg" direction="return"/>
+              <language>java</language>
+              <body>return elements.listIterator();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-1iJoIEeuM25Q6Xyzoqg" name="getAlbumsTitlesSortedByDate" specification="_cEVVYJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-1iZoIEeuM25Q6Xyzoqg" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>StringBuffer titleList = new StringBuffer();&#xD;
+		Collections.sort(albums, new SortByDate());&#xD;
+		for (Album al : albums)&#xD;
+			titleList.append(al.getTitle()+ &quot;\n&quot;);&#xD;
+		return titleList.toString();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL-1ipoIEeuM25Q6Xyzoqg" name="getAudiobooksTitlesSortedByAuthor" specification="_cEWjgJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL-1i5oIEeuM25Q6Xyzoqg" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>StringBuffer titleList = new StringBuffer();&#xD;
+		List&lt;AudioElement> audioBookList = new ArrayList&lt;AudioElement>();&#xD;
+		for (AudioElement ae : elements)&#xD;
+				if (ae instanceof AudioBook)&#xD;
+					audioBookList.add(ae);&#xD;
+		Collections.sort(audioBookList, new SortByAuthor());&#xD;
+		for (AudioElement ab : audioBookList)&#xD;
+			titleList.append(ab.getArtist()+ &quot;\n&quot;);&#xD;
+		return titleList.toString();&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL_ckJoIEeuM25Q6Xyzoqg" name="getAlbumSongs" specification="_cEXKkJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL_ckZoIEeuM25Q6Xyzoqg" name="albumTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cL_ckpoIEeuM25Q6Xyzoqg" type="_cEr6sJoIEeuM25Q6Xyzoqg" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cL_ck5oIEeuM25Q6Xyzoqg" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>Album theAlbum = null;&#xD;
+		ArrayList&lt;AudioElement> songsInAlbum = new ArrayList&lt;AudioElement>();&#xD;
+		for (Album al : albums) {&#xD;
+			if (al.getTitle().toLowerCase().equals(albumTitle.toLowerCase())) {&#xD;
+				theAlbum = al;&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+		if (theAlbum == null) throw new NoAlbumFoundException(&quot;No album with this title in the MusicHub!&quot;);&#xD;
+&#xD;
+		List&lt;UUID> songIDs = theAlbum.getSongs();&#xD;
+		for (UUID id : songIDs)&#xD;
+			for (AudioElement el : elements) {&#xD;
+				if (el instanceof Song) {&#xD;
+					if (el.getUUID().equals(id)) songsInAlbum.add(el);&#xD;
+				}&#xD;
+			}&#xD;
+		return songsInAlbum;		&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL_clJoIEeuM25Q6Xyzoqg" name="getAlbumSongsSortedByGenre" specification="_cEYYsJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL_clZoIEeuM25Q6Xyzoqg" name="albumTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cL_clpoIEeuM25Q6Xyzoqg" type="_cFOtQJoIEeuM25Q6Xyzoqg" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cL_cl5oIEeuM25Q6Xyzoqg" value="*"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>Album theAlbum = null;&#xD;
+		ArrayList&lt;Song> songsInAlbum = new ArrayList&lt;Song>();&#xD;
+		for (Album al : albums) {&#xD;
+			if (al.getTitle().toLowerCase().equals(albumTitle.toLowerCase())) {&#xD;
+				theAlbum = al;&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+		if (theAlbum == null) throw new NoAlbumFoundException(&quot;No album with this title in the MusicHub!&quot;);&#xD;
+&#xD;
+		List&lt;UUID> songIDs = theAlbum.getSongs();&#xD;
+		for (UUID id : songIDs)&#xD;
+			for (AudioElement el : elements) {&#xD;
+				if (el instanceof Song) {&#xD;
+					if (el.getUUID().equals(id)) songsInAlbum.add((Song)el);&#xD;
+				}&#xD;
+			}&#xD;
+		Collections.sort(songsInAlbum, new SortByGenre());&#xD;
+		return songsInAlbum;		&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL_cmJoIEeuM25Q6Xyzoqg" name="addElementToAlbum" specification="_cEaN4JoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL_cmZoIEeuM25Q6Xyzoqg" name="elementTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cL_cmpoIEeuM25Q6Xyzoqg" name="albumTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>Album theAlbum = null;&#xD;
+		int i = 0;&#xD;
+		boolean found = false; &#xD;
+		for (i = 0; i &lt; albums.size(); i++) {&#xD;
+			if (albums.get(i).getTitle().toLowerCase().equals(albumTitle.toLowerCase())) {&#xD;
+				theAlbum = albums.get(i);&#xD;
+				found = true;&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (found == true) {&#xD;
+			AudioElement theElement = null;&#xD;
+			for (AudioElement ae : elements) {&#xD;
+				if (ae.getTitle().toLowerCase().equals(elementTitle.toLowerCase())) {&#xD;
+					theElement = ae;&#xD;
+					break;&#xD;
+				}&#xD;
+			}&#xD;
+         if (theElement != null) {&#xD;
+             theAlbum.addSong(theElement.getUUID());&#xD;
+             //replace the album in the list&#xD;
+             albums.set(i,theAlbum);&#xD;
+         }&#xD;
+         else throw new NoElementFoundException(&quot;Element &quot; + elementTitle + &quot; not found!&quot;);&#xD;
+		}&#xD;
+		else throw new NoAlbumFoundException(&quot;Album &quot; + albumTitle + &quot; not found!&quot;);&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cL_cm5oIEeuM25Q6Xyzoqg" name="addElementToPlayList" specification="_cEbcAJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cL_cnJoIEeuM25Q6Xyzoqg" name="elementTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cL_cnZoIEeuM25Q6Xyzoqg" name="playListTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <language>java</language>
+              <body>PlayList thePlaylist = null;&#xD;
+     int i = 0;&#xD;
+		boolean found = false; &#xD;
+		&#xD;
+     for (i = 0; i &lt; playlists.size(); i++) {&#xD;
+			if (playlists.get(i).getTitle().toLowerCase().equals(playListTitle.toLowerCase())) {&#xD;
+				thePlaylist = playlists.get(i);&#xD;
+				found = true;&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+&#xD;
+		if (found == true) {&#xD;
+			AudioElement theElement = null;&#xD;
+			for (AudioElement ae : elements) {&#xD;
+				if (ae.getTitle().toLowerCase().equals(elementTitle.toLowerCase())) {&#xD;
+					theElement = ae;&#xD;
+					break;&#xD;
+				}&#xD;
+			}&#xD;
+         if (theElement != null) {&#xD;
+             thePlaylist.addElement(theElement.getUUID());&#xD;
+             //replace the album in the list&#xD;
+             playlists.set(i,thePlaylist);&#xD;
+         }&#xD;
+         else throw new NoElementFoundException(&quot;Element &quot; + elementTitle + &quot; not found!&quot;);&#xD;
+			&#xD;
+		} else throw new NoPlayListFoundException(&quot;Playlist &quot; + playListTitle + &quot; not found!&quot;);&#xD;
+		&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMADoJoIEeuM25Q6Xyzoqg" name="loadAlbums" specification="_cEcqIJoIEeuM25Q6Xyzoqg">
+              <language>java</language>
+              <body>NodeList albumNodes = xmlHandler.parseXMLFile(ALBUMS_FILE_PATH);&#xD;
+		if (albumNodes == null) return;&#xD;
+				&#xD;
+		for (int i = 0; i &lt; albumNodes.getLength(); i++) {&#xD;
+			if (albumNodes.item(i).getNodeType() == Node.ELEMENT_NODE)   {&#xD;
+				Element albumElement = (Element) albumNodes.item(i);&#xD;
+				if (albumElement.getNodeName().equals(&quot;album&quot;)) 	{&#xD;
+					try {&#xD;
+						this.addAlbum(new Album (albumElement));&#xD;
+					} catch (Exception ex) {&#xD;
+						System.out.println (&quot;Something is wrong with the XML album element&quot;);&#xD;
+					}&#xD;
+				}&#xD;
+			}  &#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMADoZoIEeuM25Q6Xyzoqg" name="loadPlaylists" specification="_cEdRMJoIEeuM25Q6Xyzoqg">
+              <language>java</language>
+              <body>NodeList playlistNodes = xmlHandler.parseXMLFile(PLAYLISTS_FILE_PATH);&#xD;
+		if (playlistNodes == null) return;&#xD;
+		&#xD;
+		for (int i = 0; i &lt; playlistNodes.getLength(); i++) {&#xD;
+			if (playlistNodes.item(i).getNodeType() == Node.ELEMENT_NODE)   {&#xD;
+				Element playlistElement = (Element) playlistNodes.item(i);&#xD;
+				if (playlistElement.getNodeName().equals(&quot;playlist&quot;)) 	{&#xD;
+					try {&#xD;
+						this.addPlaylist(new PlayList (playlistElement));&#xD;
+					} catch (Exception ex) {&#xD;
+						System.out.println (&quot;Something is wrong with the XML playlist element&quot;);&#xD;
+					}&#xD;
+				}&#xD;
+			}  &#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMADopoIEeuM25Q6Xyzoqg" name="loadElements" specification="_cEdRMZoIEeuM25Q6Xyzoqg">
+              <language>java</language>
+              <body>NodeList audioelementsNodes = xmlHandler.parseXMLFile(ELEMENTS_FILE_PATH);&#xD;
+		if (audioelementsNodes == null) return;&#xD;
+		&#xD;
+		for (int i = 0; i &lt; audioelementsNodes.getLength(); i++) {&#xD;
+			if (audioelementsNodes.item(i).getNodeType() == Node.ELEMENT_NODE)   {&#xD;
+				Element audioElement = (Element) audioelementsNodes.item(i);&#xD;
+				if (audioElement.getNodeName().equals(&quot;song&quot;)) 	{&#xD;
+					try {&#xD;
+						AudioElement newSong = new Song (audioElement);&#xD;
+						this.addElement(newSong);&#xD;
+					} catch (Exception ex) 	{&#xD;
+						System.out.println (&quot;Something is wrong with the XML song element&quot;);&#xD;
+					}&#xD;
+				}&#xD;
+				if (audioElement.getNodeName().equals(&quot;audiobook&quot;)) 	{&#xD;
+					try {&#xD;
+						AudioElement newAudioBook = new AudioBook (audioElement);&#xD;
+						this.addElement(newAudioBook);&#xD;
+					} catch (Exception ex) 	{&#xD;
+						System.out.println (&quot;Something is wrong with the XML audiobook element&quot;);&#xD;
+					}&#xD;
+				}&#xD;
+			}  &#xD;
+		}&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMADo5oIEeuM25Q6Xyzoqg" name="saveAlbums" specification="_cEd4QJoIEeuM25Q6Xyzoqg">
+              <language>java</language>
+              <body>Document document = xmlHandler.createXMLDocument();&#xD;
+		if (document == null) return;&#xD;
+		&#xD;
+		// root element&#xD;
+		Element root = document.createElement(&quot;albums&quot;);&#xD;
+		document.appendChild(root);&#xD;
+&#xD;
+		//save all albums&#xD;
+		for (Iterator&lt;Album> albumsIter = this.albums(); albumsIter.hasNext();) {&#xD;
+			Album currentAlbum = albumsIter.next();&#xD;
+			currentAlbum.createXMLElement(document, root);&#xD;
+		}&#xD;
+		xmlHandler.createXMLFile(document, ALBUMS_FILE_PATH);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMADpJoIEeuM25Q6Xyzoqg" name="savePlayLists" specification="_cEd4QZoIEeuM25Q6Xyzoqg">
+              <language>java</language>
+              <body>Document document = xmlHandler.createXMLDocument();&#xD;
+		if (document == null) return;&#xD;
+		&#xD;
+		// root element&#xD;
+		Element root = document.createElement(&quot;playlists&quot;);&#xD;
+		document.appendChild(root);&#xD;
+&#xD;
+		//save all playlists&#xD;
+		for (Iterator&lt;PlayList> playlistsIter = this.playlists(); playlistsIter.hasNext();) {&#xD;
+			PlayList currentPlayList = playlistsIter.next();&#xD;
+			currentPlayList.createXMLElement(document, root);&#xD;
+		}&#xD;
+		xmlHandler.createXMLFile(document, PLAYLISTS_FILE_PATH);&#xD;
+	</body>
+            </ownedBehavior>
+            <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMADpZoIEeuM25Q6Xyzoqg" name="saveElements" specification="_cEefUJoIEeuM25Q6Xyzoqg">
+              <language>java</language>
+              <body>Document document = xmlHandler.createXMLDocument();&#xD;
+		if (document == null) return;&#xD;
+&#xD;
+		// root element&#xD;
+		Element root = document.createElement(&quot;elements&quot;);&#xD;
+		document.appendChild(root);&#xD;
+&#xD;
+		//save all AudioElements&#xD;
+		Iterator&lt;AudioElement> elementsIter = elements.listIterator(); &#xD;
+		while (elementsIter.hasNext()) {&#xD;
+			&#xD;
+			AudioElement currentElement = elementsIter.next();&#xD;
+			if (currentElement instanceof Song)&#xD;
+			{&#xD;
+				((Song)currentElement).createXMLElement(document, root);&#xD;
+			}&#xD;
+			if (currentElement instanceof AudioBook)&#xD;
+			{ &#xD;
+				((AudioBook)currentElement).createXMLElement(document, root);&#xD;
+			}&#xD;
+		}&#xD;
+		xmlHandler.createXMLFile(document, ELEMENTS_FILE_PATH);&#xD;
+ 	</body>
+            </ownedBehavior>
+            <ownedOperation xmi:id="_cEOAoJoIEeuM25Q6Xyzoqg" name="MusicHub" method="_cL-OdJoIEeuM25Q6Xyzoqg">
+              <eAnnotations xmi:id="_cEOAoZoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                <details xmi:id="_cEOAopoIEeuM25Q6Xyzoqg" key="create"/>
+              </eAnnotations>
+              <ownedParameter xmi:id="_cEOAo5oIEeuM25Q6Xyzoqg" type="_cEMygJoIEeuM25Q6Xyzoqg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEOnsJoIEeuM25Q6Xyzoqg" name="deletePlayList" method="_cL-1gJoIEeuM25Q6Xyzoqg" raisedException="_cDm8oJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cEOnsZoIEeuM25Q6Xyzoqg" name="playListTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEP10JoIEeuM25Q6Xyzoqg" name="albums" method="_cL-1gpoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cK6egZoIEeuM25Q6Xyzoqg" type="_cK53cJoIEeuM25Q6Xyzoqg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cERrAJoIEeuM25Q6Xyzoqg" name="playlists" method="_cL-1hJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cK7FkJoIEeuM25Q6Xyzoqg" type="_cK53cJoIEeuM25Q6Xyzoqg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cES5IZoIEeuM25Q6Xyzoqg" name="elements" method="_cL-1hpoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cK7FkZoIEeuM25Q6Xyzoqg" type="_cK53cJoIEeuM25Q6Xyzoqg" direction="return"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEVVYJoIEeuM25Q6Xyzoqg" name="getAlbumsTitlesSortedByDate" method="_cL-1iJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cEV8cJoIEeuM25Q6Xyzoqg" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEWjgJoIEeuM25Q6Xyzoqg" name="getAudiobooksTitlesSortedByAuthor" method="_cL-1ipoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cEWjgZoIEeuM25Q6Xyzoqg" direction="return">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEXKkJoIEeuM25Q6Xyzoqg" name="getAlbumSongs" method="_cL_ckJoIEeuM25Q6Xyzoqg" raisedException="_cD3bUJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cEXKkZoIEeuM25Q6Xyzoqg" name="albumTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cEXxoJoIEeuM25Q6Xyzoqg" type="_cEr6sJoIEeuM25Q6Xyzoqg" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cEXxoZoIEeuM25Q6Xyzoqg" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEYYsJoIEeuM25Q6Xyzoqg" name="getAlbumSongsSortedByGenre" method="_cL_clJoIEeuM25Q6Xyzoqg" raisedException="_cD3bUJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cEY_wJoIEeuM25Q6Xyzoqg" name="albumTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cEY_wZoIEeuM25Q6Xyzoqg" type="_cFOtQJoIEeuM25Q6Xyzoqg" isOrdered="true" direction="return">
+                <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cEY_wpoIEeuM25Q6Xyzoqg" value="*"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEaN4JoIEeuM25Q6Xyzoqg" name="addElementToAlbum" method="_cL_cmJoIEeuM25Q6Xyzoqg" raisedException="_cD3bUJoIEeuM25Q6Xyzoqg _cD0_EJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cEaN4ZoIEeuM25Q6Xyzoqg" name="elementTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cEaN4poIEeuM25Q6Xyzoqg" name="albumTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEbcAJoIEeuM25Q6Xyzoqg" name="addElementToPlayList" method="_cL_cm5oIEeuM25Q6Xyzoqg" raisedException="_cDm8oJoIEeuM25Q6Xyzoqg _cD0_EJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cEcDEJoIEeuM25Q6Xyzoqg" name="elementTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+              <ownedParameter xmi:id="_cEcDEZoIEeuM25Q6Xyzoqg" name="playListTitle">
+                <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              </ownedParameter>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cEcqIJoIEeuM25Q6Xyzoqg" name="loadAlbums" visibility="private" method="_cMADoJoIEeuM25Q6Xyzoqg"/>
+            <ownedOperation xmi:id="_cEdRMJoIEeuM25Q6Xyzoqg" name="loadPlaylists" visibility="private" method="_cMADoZoIEeuM25Q6Xyzoqg"/>
+            <ownedOperation xmi:id="_cEdRMZoIEeuM25Q6Xyzoqg" name="loadElements" visibility="private" method="_cMADopoIEeuM25Q6Xyzoqg"/>
+            <ownedOperation xmi:id="_cEd4QJoIEeuM25Q6Xyzoqg" name="saveAlbums" method="_cMADo5oIEeuM25Q6Xyzoqg"/>
+            <ownedOperation xmi:id="_cEd4QZoIEeuM25Q6Xyzoqg" name="savePlayLists" method="_cMADpJoIEeuM25Q6Xyzoqg"/>
+            <ownedOperation xmi:id="_cEefUJoIEeuM25Q6Xyzoqg" name="saveElements" method="_cMADpZoIEeuM25Q6Xyzoqg"/>
+            <ownedOperation xmi:id="_cKV2wJoIEeuM25Q6Xyzoqg" name="addElement" method="_cL-OdpoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cKWd0JoIEeuM25Q6Xyzoqg" name="element" type="_cEr6sJoIEeuM25Q6Xyzoqg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cKWd0ZoIEeuM25Q6Xyzoqg" name="addAlbum" method="_cL-OeJoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cKWd0poIEeuM25Q6Xyzoqg" name="album" type="_cE_csJoIEeuM25Q6Xyzoqg"/>
+            </ownedOperation>
+            <ownedOperation xmi:id="_cKXE4JoIEeuM25Q6Xyzoqg" name="addPlaylist" method="_cL-OepoIEeuM25Q6Xyzoqg">
+              <ownedParameter xmi:id="_cKXE4ZoIEeuM25Q6Xyzoqg" name="playlist" type="_cFJNsJoIEeuM25Q6Xyzoqg"/>
+            </ownedOperation>
+          </nestedClassifier>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cEr6sJoIEeuM25Q6Xyzoqg" name="AudioElement" isAbstract="true">
+          <ownedAttribute xmi:id="_cLjXsJoIEeuM25Q6Xyzoqg" name="title" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cLj-wZoIEeuM25Q6Xyzoqg" name="artist" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cLkl0ZoIEeuM25Q6Xyzoqg" name="lengthInSeconds" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cLlM4ZoIEeuM25Q6Xyzoqg" name="uuid" visibility="protected" type="_cK9h0JoIEeuM25Q6Xyzoqg" association="_cMTlo5oIEeuM25Q6Xyzoqg"/>
+          <ownedAttribute xmi:id="_cLlz8JoIEeuM25Q6Xyzoqg" name="content" visibility="protected">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMBRwJoIEeuM25Q6Xyzoqg" name="AudioElement" specification="_cEtI0JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMBRwZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRwpoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRw5oIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRxJoIEeuM25Q6Xyzoqg" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRxZoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRxpoIEeuM25Q6Xyzoqg" type="_cEr6sJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>this.title = title;&#xD;
+		this.artist = artist;&#xD;
+		this.lengthInSeconds = lengthInSeconds;&#xD;
+		this.uuid = UUID.fromString(id);&#xD;
+		this.content = content;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMBRx5oIEeuM25Q6Xyzoqg" name="AudioElement" specification="_cEu-AJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMBRyJoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRyZoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRypoIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRy5oIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMBRzJoIEeuM25Q6Xyzoqg" type="_cEr6sJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>this.title = title;&#xD;
+		this.artist = artist;&#xD;
+		this.lengthInSeconds = lengthInSeconds;&#xD;
+		this.content = content;&#xD;
+		this.uuid =  UUID.randomUUID();&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMBRzZoIEeuM25Q6Xyzoqg" name="AudioElement" specification="_cK_XAJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMBRzpoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMBRz5oIEeuM25Q6Xyzoqg" type="_cEr6sJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>try {&#xD;
+			title = xmlElement.getElementsByTagName(&quot;title&quot;).item(0).getTextContent();&#xD;
+			artist = xmlElement.getElementsByTagName(&quot;artist&quot;).item(0).getTextContent();&#xD;
+			lengthInSeconds = Integer.parseInt(xmlElement.getElementsByTagName(&quot;length&quot;).item(0).getTextContent());&#xD;
+			content = xmlElement.getElementsByTagName(&quot;content&quot;).item(0).getTextContent();&#xD;
+			String uuid = null;&#xD;
+			try {&#xD;
+				uuid = xmlElement.getElementsByTagName(&quot;UUID&quot;).item(0).getTextContent();&#xD;
+			}&#xD;
+			catch (Exception ex) {&#xD;
+				System.out.println (&quot;Empty element UUID, will create a new one&quot;);&#xD;
+			}&#xD;
+			if ((uuid == null)  || (uuid.isEmpty()))&#xD;
+				this.uuid = UUID.randomUUID();&#xD;
+			else this.uuid = UUID.fromString(uuid);&#xD;
+		} catch (Exception ex) {&#xD;
+			throw ex;&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMB40JoIEeuM25Q6Xyzoqg" name="getUUID" specification="_cEwzMJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMB40ZoIEeuM25Q6Xyzoqg" type="_cK9h0JoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>return this.uuid;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMB40poIEeuM25Q6Xyzoqg" name="getArtist" specification="_cExaQJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMB405oIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return this.artist;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMB41JoIEeuM25Q6Xyzoqg" name="getTitle" specification="_cEyBUJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMB41ZoIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return this.title;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMB41poIEeuM25Q6Xyzoqg" name="toString" specification="_cEyoYJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMB415oIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return &quot;Title = &quot; + this.title + &quot;, Artist = &quot; + this.artist + &quot;, Length = &quot; + this.lengthInSeconds + &quot;, Content = &quot; + this.content;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMB42JoIEeuM25Q6Xyzoqg" name="createXMLElement" specification="_cLBMMJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMB42ZoIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMB42poIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <language>java</language>
+            <body>Element nameElement = document.createElement(&quot;title&quot;);&#xD;
+     nameElement.appendChild(document.createTextNode(title));&#xD;
+     parentElement.appendChild(nameElement);&#xD;
+		&#xD;
+		Element artistElement = document.createElement(&quot;artist&quot;);&#xD;
+     artistElement.appendChild(document.createTextNode(artist));&#xD;
+     parentElement.appendChild(artistElement);&#xD;
+		&#xD;
+		Element lengthElement = document.createElement(&quot;length&quot;);&#xD;
+     lengthElement.appendChild(document.createTextNode(Integer.valueOf(lengthInSeconds).toString()));&#xD;
+     parentElement.appendChild(lengthElement);&#xD;
+		&#xD;
+		Element UUIDElement = document.createElement(&quot;UUID&quot;);&#xD;
+     UUIDElement.appendChild(document.createTextNode(uuid.toString()));&#xD;
+     parentElement.appendChild(UUIDElement);&#xD;
+		&#xD;
+		Element contentElement = document.createElement(&quot;content&quot;);&#xD;
+     contentElement.appendChild(document.createTextNode(content));&#xD;
+     parentElement.appendChild(contentElement);&#xD;
+&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cEtI0JoIEeuM25Q6Xyzoqg" name="AudioElement" method="_cMBRwJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cEtv5ZoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cEtv5poIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cEtv4JoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEtv4ZoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEtv4poIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEtv45oIEeuM25Q6Xyzoqg" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEtv5JoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEtv55oIEeuM25Q6Xyzoqg" type="_cEr6sJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cEu-AJoIEeuM25Q6Xyzoqg" name="AudioElement" method="_cMBRx5oIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cEvlE5oIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cEvlFJoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cEu-AZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEvlEJoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEvlEZoIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEvlEpoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cEvlFZoIEeuM25Q6Xyzoqg" type="_cEr6sJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cEwzMJoIEeuM25Q6Xyzoqg" name="getUUID" method="_cMB40JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cK_-EJoIEeuM25Q6Xyzoqg" type="_cK9h0JoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cExaQJoIEeuM25Q6Xyzoqg" name="getArtist" method="_cMB40poIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cExaQZoIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cEyBUJoIEeuM25Q6Xyzoqg" name="getTitle" method="_cMB41JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cEyBUZoIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cEyoYJoIEeuM25Q6Xyzoqg" name="toString" method="_cMB41poIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cEyoYZoIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cK_XAJoIEeuM25Q6Xyzoqg" name="AudioElement" method="_cMBRzZoIEeuM25Q6Xyzoqg" raisedException="_cKPwIJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cK_XApoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cK_XA5oIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cK_XAZoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cK_XBJoIEeuM25Q6Xyzoqg" type="_cEr6sJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLBMMJoIEeuM25Q6Xyzoqg" name="createXMLElement" method="_cMB42JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLBMMZoIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLBMMpoIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cE250JoIEeuM25Q6Xyzoqg" name="AudioBook">
+          <generalization xmi:id="_cKdLgJoIEeuM25Q6Xyzoqg" general="_cEr6sJoIEeuM25Q6Xyzoqg"/>
+          <ownedAttribute xmi:id="_cLmbAJoIEeuM25Q6Xyzoqg" name="language" type="_cEDBgJoIEeuM25Q6Xyzoqg" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_cLmbAZoIEeuM25Q6Xyzoqg" name="category" type="_cD5QgJoIEeuM25Q6Xyzoqg" isReadOnly="true"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMCf4JoIEeuM25Q6Xyzoqg" name="AudioBook" specification="_cE4H8JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMCf4ZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf4poIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf45oIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf5JoIEeuM25Q6Xyzoqg" name="uid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf5ZoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf5poIEeuM25Q6Xyzoqg" name="language">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf55oIEeuM25Q6Xyzoqg" name="category">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf6JoIEeuM25Q6Xyzoqg" type="_cE250JoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super (title, artist, lengthInSeconds, uid, content);&#xD;
+		this.setLanguage(language);&#xD;
+		this.setCategory(category);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMCf6ZoIEeuM25Q6Xyzoqg" name="AudioBook" specification="_cE59IJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMCf6poIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf65oIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf7JoIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf7ZoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf7poIEeuM25Q6Xyzoqg" name="language">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf75oIEeuM25Q6Xyzoqg" name="category">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMCf8JoIEeuM25Q6Xyzoqg" type="_cE250JoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super (title, artist, lengthInSeconds, content);&#xD;
+		this.setLanguage(language);&#xD;
+		this.setCategory(category);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMDG8JoIEeuM25Q6Xyzoqg" name="AudioBook" specification="_cLBzQJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMDG8ZoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMDG8poIEeuM25Q6Xyzoqg" type="_cE250JoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super(xmlElement);&#xD;
+		try {&#xD;
+			this.setLanguage(xmlElement.getElementsByTagName(&quot;language&quot;).item(0).getTextContent());&#xD;
+			this.setCategory(xmlElement.getElementsByTagName(&quot;category&quot;).item(0).getTextContent());&#xD;
+		} catch (Exception ex) {&#xD;
+			throw ex;&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMDG85oIEeuM25Q6Xyzoqg" name="setLanguage" specification="_cE7yUJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMDG9JoIEeuM25Q6Xyzoqg" name="language">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>switch (language.toLowerCase()) {&#xD;
+			case &quot;english&quot;:&#xD;
+			default:&#xD;
+				this.language = Language.ENGLISH;&#xD;
+				break;&#xD;
+			case &quot;french&quot;:&#xD;
+				this.language = Language.FRENCH;&#xD;
+				break;&#xD;
+			case &quot;german&quot;:&#xD;
+				this.language = Language.GERMAN;&#xD;
+				break;&#xD;
+			case &quot;spanish&quot;:&#xD;
+				this.language = Language.SPANISH;&#xD;
+				break;&#xD;
+			case &quot;italian&quot;:&#xD;
+				this.language = Language.ITALIAN;&#xD;
+				break;&#xD;
+				&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMDG9ZoIEeuM25Q6Xyzoqg" name="setCategory" specification="_cE8ZYZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMDG9poIEeuM25Q6Xyzoqg" name="category">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>switch (category.toLowerCase()) {&#xD;
+			case &quot;youth&quot;:&#xD;
+			default:&#xD;
+				this.category = Category.YOUTH;&#xD;
+				break;&#xD;
+			case &quot;novel&quot;:&#xD;
+				this.category = Category.NOVEL;&#xD;
+				break;&#xD;
+			case &quot;theater&quot;:&#xD;
+				this.category = Category.THEATER;&#xD;
+				break;&#xD;
+			case &quot;documentary&quot;:&#xD;
+				this.category = Category.DOCUMENTARY;&#xD;
+				break;&#xD;
+			case &quot;speech&quot;:&#xD;
+				this.category = Category.SPEECH;&#xD;
+				break;&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMDuAJoIEeuM25Q6Xyzoqg" name="toString" specification="_cE9AcJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMDuAZoIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return super.toString() + &quot;, Language = &quot; + getLanguage() + &quot;, Category = &quot; + getCategory() + &quot;\n&quot;;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMDuApoIEeuM25Q6Xyzoqg" name="createXMLElement" specification="_cLCaUZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMDuA5oIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMDuBJoIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <language>java</language>
+            <body>// audiobook element&#xD;
+     Element audioBook = document.createElement(&quot;audiobook&quot;);&#xD;
+&#xD;
+		super.createXMLElement(document, audioBook);&#xD;
+		&#xD;
+		Element languageElement = document.createElement(&quot;language&quot;);&#xD;
+     languageElement.appendChild(document.createTextNode(language.getLanguage()));&#xD;
+     audioBook.appendChild(languageElement);&#xD;
+		&#xD;
+		Element categoryElement = document.createElement(&quot;category&quot;);&#xD;
+     categoryElement.appendChild(document.createTextNode(category.getCategory()));&#xD;
+     audioBook.appendChild(categoryElement);&#xD;
+		&#xD;
+		parentElement.appendChild(audioBook);&#xD;
+		return;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cE4H8JoIEeuM25Q6Xyzoqg" name="AudioBook" method="_cMCf4JoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cE4vBJoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cE4vBZoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cE4H8ZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE4H8poIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE4H85oIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE4vAJoIEeuM25Q6Xyzoqg" name="uid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE4vAZoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE4vApoIEeuM25Q6Xyzoqg" name="language">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE4vA5oIEeuM25Q6Xyzoqg" name="category">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE4vBpoIEeuM25Q6Xyzoqg" type="_cE250JoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cE59IJoIEeuM25Q6Xyzoqg" name="AudioBook" method="_cMCf6ZoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cE7LQJoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cE7LQZoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cE59IZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE6kMJoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE6kMZoIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE6kMpoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE6kM5oIEeuM25Q6Xyzoqg" name="language">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE6kNJoIEeuM25Q6Xyzoqg" name="category">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cE7LQpoIEeuM25Q6Xyzoqg" type="_cE250JoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cE7yUJoIEeuM25Q6Xyzoqg" name="setLanguage" method="_cMDG85oIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cE8ZYJoIEeuM25Q6Xyzoqg" name="language">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cE8ZYZoIEeuM25Q6Xyzoqg" name="setCategory" method="_cMDG9ZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cE8ZYpoIEeuM25Q6Xyzoqg" name="category">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cE9AcJoIEeuM25Q6Xyzoqg" name="toString" method="_cMDuAJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cE9AcZoIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLBzQJoIEeuM25Q6Xyzoqg" name="AudioBook" method="_cMDG8JoIEeuM25Q6Xyzoqg" raisedException="_cKPwIJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cLBzQpoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cLBzQ5oIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cLBzQZoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLCaUJoIEeuM25Q6Xyzoqg" type="_cE250JoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLCaUZoIEeuM25Q6Xyzoqg" name="createXMLElement" method="_cMDuApoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLCaUpoIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLCaU5oIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cE_csJoIEeuM25Q6Xyzoqg" name="Album">
+          <ownedAttribute xmi:id="_cLnCEJoIEeuM25Q6Xyzoqg" name="title" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cLnCEZoIEeuM25Q6Xyzoqg" name="artist" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cLnpIZoIEeuM25Q6Xyzoqg" name="lengthInSeconds" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cLnpI5oIEeuM25Q6Xyzoqg" name="uuid" visibility="private" type="_cK9h0JoIEeuM25Q6Xyzoqg" association="_cMUMsZoIEeuM25Q6Xyzoqg"/>
+          <ownedAttribute xmi:id="_cLoQMZoIEeuM25Q6Xyzoqg" name="date" type="_cLDocJoIEeuM25Q6Xyzoqg" isReadOnly="true"/>
+          <ownedAttribute xmi:id="_cLoQMpoIEeuM25Q6Xyzoqg" name="songsUIDs" visibility="private" type="_cLE2kZoIEeuM25Q6Xyzoqg" association="_cMUzwZoIEeuM25Q6Xyzoqg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMEVEJoIEeuM25Q6Xyzoqg" name="Album" specification="_cLGEsJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMEVEZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVEpoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVE5oIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVFJoIEeuM25Q6Xyzoqg" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVFZoIEeuM25Q6Xyzoqg" name="date">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVFpoIEeuM25Q6Xyzoqg" name="songsUIDs" type="_cLE2kZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMEVF5oIEeuM25Q6Xyzoqg" type="_cE_csJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>this.title = title;&#xD;
+		this.artist = artist;&#xD;
+		this.lengthInSeconds = lengthInSeconds;&#xD;
+		this.uuid = UUID.fromString(id);&#xD;
+		try {&#xD;
+			SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);&#xD;
+			this.date = sdf.parse(date);&#xD;
+		} catch (ParseException ex) {&#xD;
+			ex.printStackTrace();&#xD;
+		}&#xD;
+		this.songsUIDs = songsUIDs;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMEVGJoIEeuM25Q6Xyzoqg" name="Album" specification="_cFBR4JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMEVGZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVGpoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVG5oIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVHJoIEeuM25Q6Xyzoqg" name="date">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMEVHZoIEeuM25Q6Xyzoqg" type="_cE_csJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>this.title = title;&#xD;
+		this.artist = artist;&#xD;
+		this.lengthInSeconds = lengthInSeconds;&#xD;
+		this.uuid = UUID.randomUUID();&#xD;
+		try {&#xD;
+			SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);&#xD;
+			this.date = sdf.parse(date);&#xD;
+		} catch (ParseException ex) {&#xD;
+			ex.printStackTrace();&#xD;
+		}&#xD;
+		this.songsUIDs = new ArrayList&lt;UUID>();&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cME8IJoIEeuM25Q6Xyzoqg" name="Album" specification="_cLH54JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cME8IZoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cME8IpoIEeuM25Q6Xyzoqg" type="_cE_csJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>try {&#xD;
+			this.title = xmlElement.getElementsByTagName(&quot;title&quot;).item(0).getTextContent();&#xD;
+			this.lengthInSeconds = Integer.parseInt(xmlElement.getElementsByTagName(&quot;lengthInSeconds&quot;).item(0).getTextContent());&#xD;
+			String uuid = null;&#xD;
+			try {&#xD;
+				uuid = xmlElement.getElementsByTagName(&quot;UUID&quot;).item(0).getTextContent();&#xD;
+			}&#xD;
+			catch (Exception ex) {&#xD;
+				System.out.println (&quot;Empty album UUID, will create a new one&quot;);&#xD;
+			}&#xD;
+			if ((uuid == null)  || (uuid.isEmpty()))&#xD;
+				this.uuid = UUID.randomUUID();&#xD;
+			else this.uuid = UUID.fromString(uuid);&#xD;
+			&#xD;
+			SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);&#xD;
+			this.date = sdf.parse(xmlElement.getElementsByTagName(&quot;date&quot;).item(0).getTextContent()); &#xD;
+			//parse list of songs:&#xD;
+			Node songsElement = xmlElement.getElementsByTagName(&quot;songs&quot;).item(0);&#xD;
+			NodeList songUUIDNodes = songsElement.getChildNodes();&#xD;
+			if (songUUIDNodes == null) return;&#xD;
+		&#xD;
+			this.songsUIDs = new ArrayList&lt;UUID>();&#xD;
+			&#xD;
+			for (int i = 0; i &lt; songUUIDNodes.getLength(); i++) {&#xD;
+				if (songUUIDNodes.item(i).getNodeType() == Node.ELEMENT_NODE)   {&#xD;
+					Element songElement = (Element) songUUIDNodes.item(i);&#xD;
+					if (songElement.getNodeName().equals(&quot;UUID&quot;)) 	{&#xD;
+						try {&#xD;
+							this.addSong(UUID.fromString(songElement.getTextContent()));&#xD;
+						} catch (Exception ex) {&#xD;
+							ex.printStackTrace();&#xD;
+						}&#xD;
+					}&#xD;
+				} &#xD;
+			}&#xD;
+		} catch (Exception ex) {&#xD;
+			throw ex;&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cME8I5oIEeuM25Q6Xyzoqg" name="addSong" specification="_cLIg8JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cME8JJoIEeuM25Q6Xyzoqg" name="song" type="_cK9h0JoIEeuM25Q6Xyzoqg"/>
+            <language>java</language>
+            <body>songsUIDs.add(song);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cME8JZoIEeuM25Q6Xyzoqg" name="getSongs" specification="_cFDHEJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cME8JpoIEeuM25Q6Xyzoqg" type="_cK9h0JoIEeuM25Q6Xyzoqg" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cME8J5oIEeuM25Q6Xyzoqg" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return songsUIDs;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cME8KJoIEeuM25Q6Xyzoqg" name="getSongsRandomly" specification="_cFDuIJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cME8KZoIEeuM25Q6Xyzoqg" type="_cLE2kZoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>ArrayList&lt;UUID> shuffledSongs = songsUIDs;&#xD;
+		Collections.shuffle(shuffledSongs);&#xD;
+		return shuffledSongs;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMFjMJoIEeuM25Q6Xyzoqg" name="createXMLElement" specification="_cLJIAJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMFjMZoIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMFjMpoIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <language>java</language>
+            <body>Element albumElement = document.createElement(&quot;album&quot;);&#xD;
+		parentElement.appendChild(albumElement);&#xD;
+		&#xD;
+		Element nameElement = document.createElement(&quot;title&quot;);&#xD;
+     nameElement.appendChild(document.createTextNode(title));&#xD;
+     albumElement.appendChild(nameElement);&#xD;
+		&#xD;
+		Element artistElement = document.createElement(&quot;artist&quot;);&#xD;
+     artistElement.appendChild(document.createTextNode(artist));&#xD;
+     albumElement.appendChild(artistElement);&#xD;
+		&#xD;
+		Element lengthElement = document.createElement(&quot;lengthInSeconds&quot;);&#xD;
+     lengthElement.appendChild(document.createTextNode(Integer.valueOf(lengthInSeconds).toString()));&#xD;
+     albumElement.appendChild(lengthElement);&#xD;
+		&#xD;
+		Element UUIDElement = document.createElement(&quot;UUID&quot;);&#xD;
+     UUIDElement.appendChild(document.createTextNode(uuid.toString()));&#xD;
+     albumElement.appendChild(UUIDElement);&#xD;
+		&#xD;
+		Element dateElement = document.createElement(&quot;date&quot;);&#xD;
+		SimpleDateFormat sdf = new SimpleDateFormat(&quot;yyyy-MM-dd&quot;);&#xD;
+     dateElement.appendChild(document.createTextNode(sdf.format(date)));&#xD;
+     albumElement.appendChild(dateElement);&#xD;
+		&#xD;
+		Element songsElement = document.createElement(&quot;songs&quot;);&#xD;
+		for (Iterator&lt;UUID> songUUIDIter = this.songsUIDs.listIterator(); songUUIDIter.hasNext();) {&#xD;
+			UUID currentUUID = songUUIDIter.next();&#xD;
+			&#xD;
+			Element songUUIDElement = document.createElement(&quot;UUID&quot;);&#xD;
+			songUUIDElement.appendChild(document.createTextNode(currentUUID.toString()));&#xD;
+			songsElement.appendChild(songUUIDElement);&#xD;
+		}&#xD;
+		albumElement.appendChild(songsElement);&#xD;
+&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cFBR4JoIEeuM25Q6Xyzoqg" name="Album" method="_cMEVGJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cFB48poIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cFB485oIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cFBR4ZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFBR4poIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFB48JoIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFB48ZoIEeuM25Q6Xyzoqg" name="date">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFB49JoIEeuM25Q6Xyzoqg" type="_cE_csJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cFDHEJoIEeuM25Q6Xyzoqg" name="getSongs" method="_cME8JZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cFDHEZoIEeuM25Q6Xyzoqg" type="_cK9h0JoIEeuM25Q6Xyzoqg" isOrdered="true" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cFDHEpoIEeuM25Q6Xyzoqg" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cFDuIJoIEeuM25Q6Xyzoqg" name="getSongsRandomly" method="_cME8KJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLIg8poIEeuM25Q6Xyzoqg" type="_cLE2kZoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLGEsJoIEeuM25Q6Xyzoqg" name="Album" method="_cMEVEJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cLGrwZoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cLGrwpoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cLGEsZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cLGEspoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cLGEs5oIEeuM25Q6Xyzoqg" name="lengthInSeconds">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cLGEtJoIEeuM25Q6Xyzoqg" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cLGEtZoIEeuM25Q6Xyzoqg" name="date">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cLGrwJoIEeuM25Q6Xyzoqg" name="songsUIDs" type="_cLE2kZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLGrw5oIEeuM25Q6Xyzoqg" type="_cE_csJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLH54JoIEeuM25Q6Xyzoqg" name="Album" method="_cME8IJoIEeuM25Q6Xyzoqg" raisedException="_cKPwIJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cLH54poIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cLH545oIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cLH54ZoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLH55JoIEeuM25Q6Xyzoqg" type="_cE_csJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLIg8JoIEeuM25Q6Xyzoqg" name="addSong" method="_cME8I5oIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLIg8ZoIEeuM25Q6Xyzoqg" name="song" type="_cK9h0JoIEeuM25Q6Xyzoqg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLJIAJoIEeuM25Q6Xyzoqg" name="createXMLElement" method="_cMFjMJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLJIAZoIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLJIApoIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cFJNsJoIEeuM25Q6Xyzoqg" name="PlayList">
+          <ownedAttribute xmi:id="_cLpeUJoIEeuM25Q6Xyzoqg" name="title" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_cLqFYJoIEeuM25Q6Xyzoqg" name="uuid" visibility="private" type="_cK9h0JoIEeuM25Q6Xyzoqg" association="_cMVa0JoIEeuM25Q6Xyzoqg"/>
+          <ownedAttribute xmi:id="_cLqFYpoIEeuM25Q6Xyzoqg" name="elementUUIDs" visibility="private" type="_cLE2kZoIEeuM25Q6Xyzoqg" association="_cMVa05oIEeuM25Q6Xyzoqg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMFjM5oIEeuM25Q6Xyzoqg" name="PlayList" specification="_cLKWIJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMFjNJoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMFjNZoIEeuM25Q6Xyzoqg" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMFjNpoIEeuM25Q6Xyzoqg" name="elementUUIDs" type="_cLE2kZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMFjN5oIEeuM25Q6Xyzoqg" type="_cFJNsJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>this.title = title;&#xD;
+		this.uuid = UUID.fromString(id);&#xD;
+		this.elementUUIDs = elementUUIDs;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMGKQJoIEeuM25Q6Xyzoqg" name="PlayList" specification="_cFKb0JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMGKQZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMGKQpoIEeuM25Q6Xyzoqg" type="_cFJNsJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>this.title = title;&#xD;
+		this.uuid = UUID.randomUUID();&#xD;
+		this.elementUUIDs = new ArrayList&lt;UUID>();&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMGKQ5oIEeuM25Q6Xyzoqg" name="addElement" specification="_cLLkQZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMGKRJoIEeuM25Q6Xyzoqg" name="element" type="_cK9h0JoIEeuM25Q6Xyzoqg"/>
+            <language>java</language>
+            <body>elementUUIDs.add(element);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMGKRZoIEeuM25Q6Xyzoqg" name="getElements" specification="_cFLC4JoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMGKRpoIEeuM25Q6Xyzoqg" type="_cLE2kZoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>return elementUUIDs;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMGKR5oIEeuM25Q6Xyzoqg" name="PlayList" specification="_cLMLUZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMGxUJoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMGxUZoIEeuM25Q6Xyzoqg" type="_cFJNsJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>try {&#xD;
+			this.title = xmlElement.getElementsByTagName(&quot;title&quot;).item(0).getTextContent();&#xD;
+&#xD;
+			String uuid = null;&#xD;
+			try {&#xD;
+				uuid = xmlElement.getElementsByTagName(&quot;UUID&quot;).item(0).getTextContent();&#xD;
+			}&#xD;
+			catch (Exception ex) {&#xD;
+				System.out.println (&quot;Empty playlist UUID, will create a new one&quot;);&#xD;
+			}&#xD;
+			if ((uuid == null)  || (uuid.isEmpty()))&#xD;
+				this.uuid = UUID.randomUUID();&#xD;
+			else this.uuid = UUID.fromString(uuid);&#xD;
+			&#xD;
+			//parse list of elements:&#xD;
+			Node elementsElement = xmlElement.getElementsByTagName(&quot;elements&quot;).item(0);&#xD;
+			NodeList elementUUIDNodes = elementsElement.getChildNodes();&#xD;
+			if (elementUUIDNodes == null) return;&#xD;
+		&#xD;
+			this.elementUUIDs = new ArrayList&lt;UUID>();&#xD;
+			&#xD;
+			&#xD;
+			for (int i = 0; i &lt; elementUUIDNodes.getLength(); i++) {&#xD;
+				if (elementUUIDNodes.item(i).getNodeType() == Node.ELEMENT_NODE)   {&#xD;
+					Element elementElement = (Element) elementUUIDNodes.item(i);&#xD;
+					if (elementElement.getNodeName().equals(&quot;UUID&quot;)) 	{&#xD;
+						try {&#xD;
+							this.addElement(UUID.fromString(elementElement.getTextContent()));&#xD;
+						} catch (Exception ex) {&#xD;
+							ex.printStackTrace();&#xD;
+						}&#xD;
+					}&#xD;
+				} &#xD;
+			}&#xD;
+		} catch (Exception ex) {&#xD;
+			throw ex;&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMGxUpoIEeuM25Q6Xyzoqg" name="createXMLElement" specification="_cLMyYpoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMGxU5oIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMGxVJoIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <language>java</language>
+            <body>Element playlistElement = document.createElement(&quot;playlist&quot;);&#xD;
+		parentElement.appendChild(playlistElement);&#xD;
+		&#xD;
+		Element nameElement = document.createElement(&quot;title&quot;);&#xD;
+     nameElement.appendChild(document.createTextNode(title));&#xD;
+     playlistElement.appendChild(nameElement);&#xD;
+		&#xD;
+		Element UUIDElement = document.createElement(&quot;UUID&quot;);&#xD;
+     UUIDElement.appendChild(document.createTextNode(uuid.toString()));&#xD;
+     playlistElement.appendChild(UUIDElement);&#xD;
+&#xD;
+		&#xD;
+		Element elementsElement = document.createElement(&quot;elements&quot;);&#xD;
+		for (Iterator&lt;UUID> elementUUIDIter = this.elementUUIDs.listIterator(); elementUUIDIter.hasNext();) {&#xD;
+			&#xD;
+			UUID currentUUID = elementUUIDIter.next();&#xD;
+			&#xD;
+			Element elementUUIDElement = document.createElement(&quot;UUID&quot;);&#xD;
+			elementUUIDElement.appendChild(document.createTextNode(currentUUID.toString()));&#xD;
+			elementsElement.appendChild(elementUUIDElement);&#xD;
+		}&#xD;
+		playlistElement.appendChild(elementsElement);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cFKb0JoIEeuM25Q6Xyzoqg" name="PlayList" method="_cMGKQJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cFKb0poIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cFKb05oIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cFKb0ZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFKb1JoIEeuM25Q6Xyzoqg" type="_cFJNsJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cFLC4JoIEeuM25Q6Xyzoqg" name="getElements" method="_cMGKRZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLMLUJoIEeuM25Q6Xyzoqg" type="_cLE2kZoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLKWIJoIEeuM25Q6Xyzoqg" name="PlayList" method="_cMFjM5oIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cLK9MJoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cLK9MZoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cLKWIZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cLKWIpoIEeuM25Q6Xyzoqg" name="id">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cLKWI5oIEeuM25Q6Xyzoqg" name="elementUUIDs" type="_cLE2kZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLK9MpoIEeuM25Q6Xyzoqg" type="_cFJNsJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLLkQZoIEeuM25Q6Xyzoqg" name="addElement" method="_cMGKQ5oIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLLkQpoIEeuM25Q6Xyzoqg" name="element" type="_cK9h0JoIEeuM25Q6Xyzoqg"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLMLUZoIEeuM25Q6Xyzoqg" name="PlayList" method="_cMGKR5oIEeuM25Q6Xyzoqg" raisedException="_cKPwIJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cLMLU5oIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cLMyYJoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cLMLUpoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLMyYZoIEeuM25Q6Xyzoqg" type="_cFJNsJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLMyYpoIEeuM25Q6Xyzoqg" name="createXMLElement" method="_cMGxUpoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLMyY5oIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLMyZJoIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cFOtQJoIEeuM25Q6Xyzoqg" name="Song">
+          <generalization xmi:id="_cKg14JoIEeuM25Q6Xyzoqg" general="_cEr6sJoIEeuM25Q6Xyzoqg"/>
+          <ownedAttribute xmi:id="_cLrTgJoIEeuM25Q6Xyzoqg" name="genre" type="_cD-JAJoIEeuM25Q6Xyzoqg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMHYYZoIEeuM25Q6Xyzoqg" name="Song" specification="_cFQicJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMHYYpoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYY5oIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYZJoIEeuM25Q6Xyzoqg" name="length">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYZZoIEeuM25Q6Xyzoqg" name="uid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYZpoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYZ5oIEeuM25Q6Xyzoqg" name="genre">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYaJoIEeuM25Q6Xyzoqg" type="_cFOtQJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super (title, artist, length, uid, content);&#xD;
+		this.setGenre(genre);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMHYaZoIEeuM25Q6Xyzoqg" name="Song" specification="_cFSXoJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMHYapoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYa5oIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYbJoIEeuM25Q6Xyzoqg" name="length">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYbZoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYbpoIEeuM25Q6Xyzoqg" name="genre">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMHYb5oIEeuM25Q6Xyzoqg" type="_cFOtQJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super (title, artist, length, content);&#xD;
+		this.setGenre(genre);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMH_cJoIEeuM25Q6Xyzoqg" name="Song" specification="_cLOAgJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMH_cZoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMH_cpoIEeuM25Q6Xyzoqg" type="_cFOtQJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>super(xmlElement);&#xD;
+		try {&#xD;
+			this.setGenre(xmlElement.getElementsByTagName(&quot;genre&quot;).item(0).getTextContent());&#xD;
+		} catch (Exception ex) {&#xD;
+			throw ex;&#xD;
+		}&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMH_c5oIEeuM25Q6Xyzoqg" name="toString" specification="_cFTlwJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMH_dJoIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return super.toString() + &quot;, Genre = &quot; + getGenre() + &quot;\n&quot;;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMH_dZoIEeuM25Q6Xyzoqg" name="createXMLElement" specification="_cLOnkJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMH_dpoIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMH_d5oIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <language>java</language>
+            <body>// song element&#xD;
+     Element song = document.createElement(&quot;song&quot;);&#xD;
+&#xD;
+		super.createXMLElement(document, song);&#xD;
+		&#xD;
+		Element genreElement = document.createElement(&quot;genre&quot;);&#xD;
+     genreElement.appendChild(document.createTextNode(genre.getGenre()));&#xD;
+     song.appendChild(genreElement);&#xD;
+		&#xD;
+		parentElement.appendChild(song);&#xD;
+		return;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cFQicJoIEeuM25Q6Xyzoqg" name="Song" method="_cMHYYZoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cFRJg5oIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cFRJhJoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cFQicZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFQicpoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFQic5oIEeuM25Q6Xyzoqg" name="length">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFRJgJoIEeuM25Q6Xyzoqg" name="uid">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFRJgZoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFRJgpoIEeuM25Q6Xyzoqg" name="genre">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFRJhZoIEeuM25Q6Xyzoqg" type="_cFOtQJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cFSXoJoIEeuM25Q6Xyzoqg" name="Song" method="_cMHYaZoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cFS-spoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cFS-s5oIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cFSXoZoIEeuM25Q6Xyzoqg" name="title">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFSXopoIEeuM25Q6Xyzoqg" name="artist">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFSXo5oIEeuM25Q6Xyzoqg" name="length">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFS-sJoIEeuM25Q6Xyzoqg" name="content">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFS-sZoIEeuM25Q6Xyzoqg" name="genre">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cFS-tJoIEeuM25Q6Xyzoqg" type="_cFOtQJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cFTlwJoIEeuM25Q6Xyzoqg" name="toString" method="_cMH_c5oIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cFTlwZoIEeuM25Q6Xyzoqg" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLOAgJoIEeuM25Q6Xyzoqg" name="Song" method="_cMH_cJoIEeuM25Q6Xyzoqg" raisedException="_cKPwIJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cLOAgpoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cLOAg5oIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cLOAgZoIEeuM25Q6Xyzoqg" name="xmlElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLOAhJoIEeuM25Q6Xyzoqg" type="_cFOtQJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLOnkJoIEeuM25Q6Xyzoqg" name="createXMLElement" method="_cMH_dZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLOnkZoIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLOnkpoIEeuM25Q6Xyzoqg" name="parentElement" type="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMRwcJoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMRwcZoIEeuM25Q6Xyzoqg _cLdREJoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMRwcZoIEeuM25Q6Xyzoqg" name="" type="_cEMygJoIEeuM25Q6Xyzoqg" association="_cMRwcJoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMSXgZoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMSXgpoIEeuM25Q6Xyzoqg _cLefMZoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMSXgpoIEeuM25Q6Xyzoqg" name="" type="_cEMygJoIEeuM25Q6Xyzoqg" association="_cMSXgZoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMS-kZoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMS-kpoIEeuM25Q6Xyzoqg _cLfGQZoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMS-kpoIEeuM25Q6Xyzoqg" name="" type="_cEMygJoIEeuM25Q6Xyzoqg" association="_cMS-kZoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMTloJoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMTloZoIEeuM25Q6Xyzoqg _cLiJk5oIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMTloZoIEeuM25Q6Xyzoqg" name="" type="_cEMygJoIEeuM25Q6Xyzoqg" association="_cMTloJoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMTlo5oIEeuM25Q6Xyzoqg" name="" memberEnd="_cMTlpJoIEeuM25Q6Xyzoqg _cLlM4ZoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMTlpJoIEeuM25Q6Xyzoqg" name="" type="_cEr6sJoIEeuM25Q6Xyzoqg" association="_cMTlo5oIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMUMsZoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMUMspoIEeuM25Q6Xyzoqg _cLnpI5oIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMUMspoIEeuM25Q6Xyzoqg" name="" type="_cE_csJoIEeuM25Q6Xyzoqg" association="_cMUMsZoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMUzwZoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMUzwpoIEeuM25Q6Xyzoqg _cLoQMpoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMUzwpoIEeuM25Q6Xyzoqg" name="" type="_cE_csJoIEeuM25Q6Xyzoqg" association="_cMUzwZoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMVa0JoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMVa0ZoIEeuM25Q6Xyzoqg _cLqFYJoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMVa0ZoIEeuM25Q6Xyzoqg" name="" type="_cFJNsJoIEeuM25Q6Xyzoqg" association="_cMVa0JoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMVa05oIEeuM25Q6Xyzoqg" name="" memberEnd="_cMVa1JoIEeuM25Q6Xyzoqg _cLqFYpoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMVa1JoIEeuM25Q6Xyzoqg" name="" type="_cFJNsJoIEeuM25Q6Xyzoqg" association="_cMVa05oIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cClB4JoIEeuM25Q6Xyzoqg" name="util">
+        <packagedElement xmi:type="uml:Class" xmi:id="_cFYeQJoIEeuM25Q6Xyzoqg" name="XMLHandler">
+          <ownedAttribute xmi:id="_cLshoZoIEeuM25Q6Xyzoqg" name="transformerFactory" visibility="package" type="_cLPOoJoIEeuM25Q6Xyzoqg" association="_cMWB4ZoIEeuM25Q6Xyzoqg"/>
+          <ownedAttribute xmi:id="_cLtIsZoIEeuM25Q6Xyzoqg" name="transformer" visibility="package" type="_cLQcwJoIEeuM25Q6Xyzoqg" association="_cMWo8ZoIEeuM25Q6Xyzoqg"/>
+          <ownedAttribute xmi:id="_cLtvwZoIEeuM25Q6Xyzoqg" name="documentFactory" visibility="package" type="_cLRD0ZoIEeuM25Q6Xyzoqg" association="_cMXQAZoIEeuM25Q6Xyzoqg"/>
+          <ownedAttribute xmi:id="_cLtvw5oIEeuM25Q6Xyzoqg" name="documentBuilder" visibility="package" type="_cLSR8JoIEeuM25Q6Xyzoqg" association="_cMYeIJoIEeuM25Q6Xyzoqg"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMImhJoIEeuM25Q6Xyzoqg" name="XMLHandler" specification="_cFZsYJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMImhZoIEeuM25Q6Xyzoqg" type="_cFYeQJoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>try {&#xD;
+			transformerFactory = TransformerFactory.newInstance();&#xD;
+			transformer = transformerFactory.newTransformer();&#xD;
+			documentFactory = DocumentBuilderFactory.newInstance();&#xD;
+			documentBuilder = documentFactory.newDocumentBuilder();&#xD;
+		} catch (TransformerException tfe) {&#xD;
+         tfe.printStackTrace();&#xD;
+     } catch (ParserConfigurationException pce) {&#xD;
+         pce.printStackTrace();&#xD;
+     }&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMImhpoIEeuM25Q6Xyzoqg" name="createXMLFile" specification="_cLS5AJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMImh5oIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cMImiJoIEeuM25Q6Xyzoqg" name="filePath">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>try {&#xD;
+		// create the xml file&#xD;
+     //transform the DOM Object to an XML File&#xD;
+		DOMSource domSource = new DOMSource(document);&#xD;
+		StreamResult streamResult = new StreamResult(new File(filePath));&#xD;
+&#xD;
+		// If you use&#xD;
+		// StreamResult result = new StreamResult(System.out);&#xD;
+		// the output will be pushed to the standard output ...&#xD;
+		// You can use that for debugging &#xD;
+&#xD;
+		transformer.transform(domSource, streamResult);&#xD;
+		&#xD;
+		} catch (TransformerException tfe) {&#xD;
+         tfe.printStackTrace();&#xD;
+     }&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMJNkJoIEeuM25Q6Xyzoqg" name="createXMLDocument" specification="_cFaTcJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMJNkZoIEeuM25Q6Xyzoqg" type="_cK_-EZoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>return documentBuilder.newDocument();&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMJNkpoIEeuM25Q6Xyzoqg" name="parseXMLFile" specification="_cFaTcZoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMJNk5oIEeuM25Q6Xyzoqg" name="filePath">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cMJNlJoIEeuM25Q6Xyzoqg" type="_cLTgEZoIEeuM25Q6Xyzoqg" direction="return"/>
+            <language>java</language>
+            <body>NodeList elementNodes = null;&#xD;
+		try {&#xD;
+			Document document= documentBuilder.parse(new File(filePath));&#xD;
+			Element root = document.getDocumentElement();&#xD;
+			&#xD;
+			elementNodes = root.getChildNodes();	&#xD;
+		}&#xD;
+		catch (SAXException e) &#xD;
+		{&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		catch (IOException e) &#xD;
+		{&#xD;
+			e.printStackTrace();&#xD;
+		}&#xD;
+		return elementNodes;&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cFZsYJoIEeuM25Q6Xyzoqg" name="XMLHandler" method="_cMImhJoIEeuM25Q6Xyzoqg">
+            <eAnnotations xmi:id="_cFZsYZoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_cFZsYpoIEeuM25Q6Xyzoqg" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_cFZsY5oIEeuM25Q6Xyzoqg" type="_cFYeQJoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cFaTcJoIEeuM25Q6Xyzoqg" name="createXMLDocument" method="_cMJNkJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLTgEJoIEeuM25Q6Xyzoqg" type="_cK_-EZoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cFaTcZoIEeuM25Q6Xyzoqg" name="parseXMLFile" method="_cMJNkpoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cFaTcpoIEeuM25Q6Xyzoqg" name="filePath">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_cLUHIJoIEeuM25Q6Xyzoqg" type="_cLTgEZoIEeuM25Q6Xyzoqg" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cLS5AJoIEeuM25Q6Xyzoqg" name="createXMLFile" method="_cMImhpoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cLS5AZoIEeuM25Q6Xyzoqg" name="document" type="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+            <ownedParameter xmi:id="_cLS5ApoIEeuM25Q6Xyzoqg" name="filePath">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMWB4ZoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMWB4poIEeuM25Q6Xyzoqg _cLshoZoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMWB4poIEeuM25Q6Xyzoqg" name="" type="_cFYeQJoIEeuM25Q6Xyzoqg" association="_cMWB4ZoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMWo8ZoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMWo8poIEeuM25Q6Xyzoqg _cLtIsZoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMWo8poIEeuM25Q6Xyzoqg" name="" type="_cFYeQJoIEeuM25Q6Xyzoqg" association="_cMWo8ZoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMXQAZoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMXQApoIEeuM25Q6Xyzoqg _cLtvwZoIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMXQApoIEeuM25Q6Xyzoqg" name="" type="_cFYeQJoIEeuM25Q6Xyzoqg" association="_cMXQAZoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_cMYeIJoIEeuM25Q6Xyzoqg" name="" memberEnd="_cMYeIZoIEeuM25Q6Xyzoqg _cLtvw5oIEeuM25Q6Xyzoqg">
+          <ownedEnd xmi:id="_cMYeIZoIEeuM25Q6Xyzoqg" name="" type="_cFYeQJoIEeuM25Q6Xyzoqg" association="_cMYeIJoIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cDSMgJoIEeuM25Q6Xyzoqg" name="main">
+        <packagedElement xmi:type="uml:Class" xmi:id="_cFWCAJoIEeuM25Q6Xyzoqg" name="Main">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMImgJoIEeuM25Q6Xyzoqg" name="main" specification="_cFXQIJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cMImgZoIEeuM25Q6Xyzoqg" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cMImgpoIEeuM25Q6Xyzoqg" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>MusicHub theHub = new MusicHub ();&#xD;
+		&#xD;
+		System.out.println(&quot;Type h for available commands&quot;);&#xD;
+		&#xD;
+		&#xD;
+		Scanner scan = new Scanner(System.in);&#xD;
+		String choice = scan.nextLine();&#xD;
+		&#xD;
+		String albumTitle = null;&#xD;
+		&#xD;
+		if (choice.length() == 0) System.exit(0);						&#xD;
+		&#xD;
+		while (choice.charAt(0)!= 'q') 	{&#xD;
+			switch (choice.charAt(0)) 	{&#xD;
+				case 'h':&#xD;
+					printAvailableCommands();&#xD;
+					choice = scan.nextLine();&#xD;
+				break;&#xD;
+				case 't':&#xD;
+					//album titles, ordered by date&#xD;
+					System.out.println(theHub.getAlbumsTitlesSortedByDate());&#xD;
+					printAvailableCommands();&#xD;
+					choice = scan.nextLine();&#xD;
+				break;&#xD;
+				case 'g':&#xD;
+					//songs of an album, sorted by genre&#xD;
+					System.out.println(&quot;Songs of an album sorted by genre will be displayed; enter the album name, available albums are:&quot;);&#xD;
+					System.out.println(theHub.getAlbumsTitlesSortedByDate());&#xD;
+					&#xD;
+					albumTitle = scan.nextLine();&#xD;
+					try {&#xD;
+						System.out.println(theHub.getAlbumSongsSortedByGenre(albumTitle));&#xD;
+					} catch (NoAlbumFoundException ex) {&#xD;
+						System.out.println(&quot;No album found with the requested title &quot; + ex.getMessage());&#xD;
+					}&#xD;
+					printAvailableCommands();&#xD;
+					choice = scan.nextLine();&#xD;
+				break;&#xD;
+				case 'd':&#xD;
+					//songs of an album&#xD;
+					System.out.println(&quot;Songs of an album will be displayed; enter the album name, available albums are:&quot;);&#xD;
+					System.out.println(theHub.getAlbumsTitlesSortedByDate());&#xD;
+					&#xD;
+					albumTitle = scan.nextLine();&#xD;
+					try {&#xD;
+						System.out.println(theHub.getAlbumSongs(albumTitle));&#xD;
+					} catch (NoAlbumFoundException ex) {&#xD;
+						System.out.println(&quot;No album found with the requested title &quot; + ex.getMessage());&#xD;
+					}&#xD;
+					printAvailableCommands();&#xD;
+					choice = scan.nextLine();&#xD;
+				break;&#xD;
+				case 'u':&#xD;
+					//audiobooks ordered by author&#xD;
+					System.out.println(theHub.getAudiobooksTitlesSortedByAuthor());&#xD;
+					printAvailableCommands();&#xD;
+					choice = scan.nextLine();&#xD;
+				break;&#xD;
+				case 'c':&#xD;
+					// add a new song&#xD;
+                 System.out.println(&quot;Enter a new song: &quot;);&#xD;
+                 System.out.println(&quot;Song title: &quot;);&#xD;
+                 String title = scan.nextLine();&#xD;
+                 System.out.println(&quot;Song genre (jazz, classic, hiphop, rock, pop, rap):&quot;);&#xD;
+                 String genre = scan.nextLine();&#xD;
+                 System.out.println(&quot;Song artist: &quot;);&#xD;
+                 String artist = scan.nextLine();&#xD;
+                 System.out.println (&quot;Song length in seconds: &quot;);&#xD;
+                 int length = Integer.parseInt(scan.nextLine());&#xD;
+                 System.out.println(&quot;Song content: &quot;); &#xD;
+                 String content = scan.nextLine();&#xD;
+                 Song s = new Song (title, artist, length, content, genre);&#xD;
+                 theHub.addElement(s);&#xD;
+                 System.out.println(&quot;New element list: &quot;);&#xD;
+                 Iterator&lt;AudioElement> it = theHub.elements();&#xD;
+                 while (it.hasNext()) System.out.println(it.next().getTitle());&#xD;
+                 System.out.println(&quot;Song created!&quot;);&#xD;
+                 printAvailableCommands();&#xD;
+                 choice = scan.nextLine();&#xD;
+             break;&#xD;
+				case 'a':&#xD;
+					// add a new album&#xD;
+                 System.out.println(&quot;Enter a new album: &quot;);&#xD;
+                 System.out.println(&quot;Album title: &quot;);&#xD;
+                 String aTitle = scan.nextLine();&#xD;
+                 System.out.println(&quot;Album artist: &quot;);&#xD;
+                 String aArtist = scan.nextLine();&#xD;
+                 System.out.println (&quot;Album length in seconds: &quot;);&#xD;
+                 int aLength = Integer.parseInt(scan.nextLine());&#xD;
+                 System.out.println(&quot;Album date as YYYY-DD-MM: &quot;); &#xD;
+                 String aDate = scan.nextLine();&#xD;
+                 Album a = new Album(aTitle, aArtist, aLength, aDate);&#xD;
+                 theHub.addAlbum(a);&#xD;
+                 System.out.println(&quot;New list of albums: &quot;);&#xD;
+                 Iterator&lt;Album> ita = theHub.albums();&#xD;
+                 while (ita.hasNext()) System.out.println(ita.next().getTitle());&#xD;
+                 System.out.println(&quot;Album created!&quot;);&#xD;
+                 printAvailableCommands();&#xD;
+                 choice = scan.nextLine();&#xD;
+				break;&#xD;
+				case '+':&#xD;
+					//add a song to an album:&#xD;
+					System.out.println(&quot;Add an existing song to an existing album&quot;);&#xD;
+					System.out.println(&quot;Type the name of the song you wish to add. Available songs: &quot;);&#xD;
+					Iterator&lt;AudioElement> itae = theHub.elements();&#xD;
+					while (itae.hasNext()) {&#xD;
+						AudioElement ae = itae.next();&#xD;
+						if ( ae instanceof Song) System.out.println(ae.getTitle());&#xD;
+					}&#xD;
+					String songTitle = scan.nextLine();	&#xD;
+					&#xD;
+					System.out.println(&quot;Type the name of the album you wish to enrich. Available albums: &quot;);&#xD;
+					Iterator&lt;Album> ait = theHub.albums();&#xD;
+					while (ait.hasNext()) {&#xD;
+						Album al = ait.next();&#xD;
+						System.out.println(al.getTitle());&#xD;
+					}&#xD;
+					String titleAlbum = scan.nextLine();&#xD;
+					try {&#xD;
+						theHub.addElementToAlbum(songTitle, titleAlbum);&#xD;
+					} catch (NoAlbumFoundException ex){&#xD;
+						System.out.println (ex.getMessage());&#xD;
+					} catch (NoElementFoundException ex){&#xD;
+						System.out.println (ex.getMessage());&#xD;
+					}&#xD;
+					System.out.println(&quot;Song added to the album!&quot;);&#xD;
+					printAvailableCommands();&#xD;
+                 choice = scan.nextLine();&#xD;
+					break;&#xD;
+				case 'l':&#xD;
+					// add a new audiobook&#xD;
+                 System.out.println(&quot;Enter a new audiobook: &quot;);&#xD;
+                 System.out.println(&quot;AudioBook title: &quot;);&#xD;
+                 String bTitle = scan.nextLine();&#xD;
+                 System.out.println(&quot;AudioBook category (youth, novel, theater, documentary, speech)&quot;);&#xD;
+                 String bCategory = scan.nextLine();&#xD;
+                 System.out.println(&quot;AudioBook artist: &quot;);&#xD;
+                 String bArtist = scan.nextLine();&#xD;
+                 System.out.println (&quot;AudioBook length in seconds: &quot;);&#xD;
+                 int bLength = Integer.parseInt(scan.nextLine());&#xD;
+                 System.out.println(&quot;AudioBook content: &quot;); &#xD;
+                 String bContent = scan.nextLine();&#xD;
+                 System.out.println(&quot;AudioBook language (french, english, italian, spanish, german)&quot;);&#xD;
+                 String bLanguage = scan.nextLine();&#xD;
+                 AudioBook b = new AudioBook (bTitle, bArtist, bLength, bContent, bLanguage, bCategory);&#xD;
+                 theHub.addElement(b);&#xD;
+                 System.out.println(&quot;Audiobook created! New element list: &quot;);&#xD;
+                 Iterator&lt;AudioElement> itl = theHub.elements();&#xD;
+                 while (itl.hasNext()) System.out.println(itl.next().getTitle());&#xD;
+                 printAvailableCommands();&#xD;
+                 choice = scan.nextLine();&#xD;
+				break;&#xD;
+				case 'p':&#xD;
+					//create a new playlist from existing elements&#xD;
+					System.out.println(&quot;Add an existing song or audiobook to a new playlist&quot;);&#xD;
+					System.out.println(&quot;Existing playlists:&quot;);&#xD;
+					Iterator&lt;PlayList> itpl = theHub.playlists();&#xD;
+					while (itpl.hasNext()) {&#xD;
+						PlayList pl = itpl.next();&#xD;
+						System.out.println(pl.getTitle());&#xD;
+					}&#xD;
+					System.out.println(&quot;Type the name of the playlist you wish to create:&quot;);&#xD;
+					String playListTitle = scan.nextLine();	&#xD;
+					PlayList pl = new PlayList(playListTitle);&#xD;
+					theHub.addPlaylist(pl);&#xD;
+					System.out.println(&quot;Available elements: &quot;);&#xD;
+					&#xD;
+					Iterator&lt;AudioElement> itael = theHub.elements();&#xD;
+					while (itael.hasNext()) {&#xD;
+						AudioElement ae = itael.next();&#xD;
+						System.out.println(ae.getTitle());&#xD;
+					}&#xD;
+					while (choice.charAt(0)!= 'n') 	{&#xD;
+						System.out.println(&quot;Type the name of the audio element you wish to add or 'n' to exit:&quot;);&#xD;
+						String elementTitle = scan.nextLine();	&#xD;
+                     try {&#xD;
+                         theHub.addElementToPlayList(elementTitle, playListTitle);&#xD;
+                     } catch (NoPlayListFoundException ex) {&#xD;
+                         System.out.println (ex.getMessage());&#xD;
+                     } catch (NoElementFoundException ex) {&#xD;
+                         System.out.println (ex.getMessage());&#xD;
+                     }&#xD;
+                         &#xD;
+						System.out.println(&quot;Type y to add a new one, n to end&quot;);&#xD;
+						choice = scan.nextLine();&#xD;
+					}&#xD;
+					System.out.println(&quot;Playlist created!&quot;);&#xD;
+					printAvailableCommands();&#xD;
+					choice = scan.nextLine();&#xD;
+					break;&#xD;
+				case '-':&#xD;
+					//delete a playlist&#xD;
+					System.out.println(&quot;Delete an existing playlist. Available playlists:&quot;);&#xD;
+					Iterator&lt;PlayList> itp = theHub.playlists();&#xD;
+					while (itp.hasNext()) {&#xD;
+						PlayList p = itp.next();&#xD;
+						System.out.println(p.getTitle());&#xD;
+					}&#xD;
+					String plTitle = scan.nextLine();	&#xD;
+					try {&#xD;
+						theHub.deletePlayList(plTitle);&#xD;
+					}	catch (NoPlayListFoundException ex) {&#xD;
+						System.out.println (ex.getMessage());&#xD;
+					}&#xD;
+					System.out.println(&quot;Playlist deleted!&quot;);&#xD;
+					printAvailableCommands();&#xD;
+					choice = scan.nextLine();&#xD;
+				break;&#xD;
+				case 's':&#xD;
+					//save elements, albums, playlists&#xD;
+					theHub.saveElements();&#xD;
+					theHub.saveAlbums();&#xD;
+					theHub.savePlayLists();&#xD;
+					System.out.println(&quot;Elements, albums and playlists saved!&quot;);&#xD;
+					printAvailableCommands();&#xD;
+					choice = scan.nextLine();&#xD;
+				break;&#xD;
+				default:&#xD;
+				&#xD;
+				break;&#xD;
+			}&#xD;
+		}&#xD;
+		scan.close();&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_cMImg5oIEeuM25Q6Xyzoqg" name="printAvailableCommands" specification="_cFX3MZoIEeuM25Q6Xyzoqg">
+            <language>java</language>
+            <body>System.out.println(&quot;t: display the album titles, ordered by date&quot;);&#xD;
+		System.out.println(&quot;g: display songs of an album, ordered by genre&quot;);&#xD;
+		System.out.println(&quot;d: display songs of an album&quot;);&#xD;
+		System.out.println(&quot;u: display audiobooks ordered by author&quot;);&#xD;
+		System.out.println(&quot;c: add a new song&quot;);&#xD;
+		System.out.println(&quot;a: add a new album&quot;);&#xD;
+		System.out.println(&quot;+: add a song to an album&quot;);&#xD;
+		System.out.println(&quot;l: add a new audiobook&quot;);&#xD;
+		System.out.println(&quot;p: create a new playlist from existing songs and audio books&quot;);&#xD;
+		System.out.println(&quot;-: delete an existing playlist&quot;);&#xD;
+		System.out.println(&quot;s: save elements, albums, playlists&quot;);&#xD;
+		System.out.println(&quot;q: quit program&quot;);&#xD;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_cFXQIJoIEeuM25Q6Xyzoqg" name="main" isStatic="true" method="_cMImgJoIEeuM25Q6Xyzoqg">
+            <ownedParameter xmi:id="_cFXQIZoIEeuM25Q6Xyzoqg" name="args">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_cFX3MJoIEeuM25Q6Xyzoqg" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_cFX3MZoIEeuM25Q6Xyzoqg" name="printAvailableCommands" visibility="private" isStatic="true" method="_cMImg5oIEeuM25Q6Xyzoqg"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cCKyMJoIEeuM25Q6Xyzoqg" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_cCLZQJoIEeuM25Q6Xyzoqg" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_cKPwIJoIEeuM25Q6Xyzoqg" name="Exception"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cCjMsJoIEeuM25Q6Xyzoqg" name="util">
+        <packagedElement xmi:type="uml:Interface" xmi:id="_cKwtgJoIEeuM25Q6Xyzoqg" name="Comparator"/>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_cK53cJoIEeuM25Q6Xyzoqg" name="Iterator"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cK9h0JoIEeuM25Q6Xyzoqg" name="UUID"/>
+        <packagedElement xmi:type="uml:DataType" xmi:id="_cLDocJoIEeuM25Q6Xyzoqg" name="Date"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cLE2kZoIEeuM25Q6Xyzoqg" name="ArrayList"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cDDjAJoIEeuM25Q6Xyzoqg" name="io">
+        <packagedElement xmi:type="uml:Class" xmi:id="_cKjSIZoIEeuM25Q6Xyzoqg" name="FileOutputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cKj5MZoIEeuM25Q6Xyzoqg" name="BufferedOutputStream"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cKnjkZoIEeuM25Q6Xyzoqg" name="IOException"/>
+        <packagedElement xmi:type="uml:Class" xmi:id="_cKoKoZoIEeuM25Q6Xyzoqg" name="File"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cDGmUJoIEeuM25Q6Xyzoqg" name="text"/>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cDRlcJoIEeuM25Q6Xyzoqg" name="beans">
+        <packagedElement xmi:type="uml:Class" xmi:id="_cKirEJoIEeuM25Q6Xyzoqg" name="XMLEncoder"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cClB4ZoIEeuM25Q6Xyzoqg" name="org">
+      <packagedElement xmi:type="uml:Package" xmi:id="_cClo8JoIEeuM25Q6Xyzoqg" name="w3c">
+        <packagedElement xmi:type="uml:Package" xmi:id="_cClo8ZoIEeuM25Q6Xyzoqg" name="dom">
+          <packagedElement xmi:type="uml:Interface" xmi:id="_cK-v8JoIEeuM25Q6Xyzoqg" name="Element"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_cK_-EZoIEeuM25Q6Xyzoqg" name="Document"/>
+          <packagedElement xmi:type="uml:Interface" xmi:id="_cLTgEZoIEeuM25Q6Xyzoqg" name="NodeList"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_cDUBsJoIEeuM25Q6Xyzoqg" name="xml">
+        <packagedElement xmi:type="uml:Package" xmi:id="_cDUBsZoIEeuM25Q6Xyzoqg" name="sax">
+          <packagedElement xmi:type="uml:Class" xmi:id="_cKm8gJoIEeuM25Q6Xyzoqg" name="SAXException"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_cDSzkJoIEeuM25Q6Xyzoqg" name="javax">
+      <packagedElement xmi:type="uml:Package" xmi:id="_cDSzkZoIEeuM25Q6Xyzoqg" name="xml">
+        <packagedElement xmi:type="uml:Package" xmi:id="_cDTaoJoIEeuM25Q6Xyzoqg" name="parsers">
+          <packagedElement xmi:type="uml:Class" xmi:id="_cLRD0ZoIEeuM25Q6Xyzoqg" name="DocumentBuilderFactory"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cLSR8JoIEeuM25Q6Xyzoqg" name="DocumentBuilder"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Package" xmi:id="_cDTaoZoIEeuM25Q6Xyzoqg" name="transform">
+          <packagedElement xmi:type="uml:Package" xmi:id="_cDTaopoIEeuM25Q6Xyzoqg" name="dom">
+            <packagedElement xmi:type="uml:Class" xmi:id="_cKlHUZoIEeuM25Q6Xyzoqg" name="DOMSource"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Package" xmi:id="_cDTao5oIEeuM25Q6Xyzoqg" name="stream">
+            <packagedElement xmi:type="uml:Class" xmi:id="_cKluYZoIEeuM25Q6Xyzoqg" name="StreamResult"/>
+          </packagedElement>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cLPOoJoIEeuM25Q6Xyzoqg" name="TransformerFactory"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_cLQcwJoIEeuM25Q6Xyzoqg" name="Transformer"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_buDjYJoIEeuM25Q6Xyzoqg">
+      <eAnnotations xmi:id="_buIb4JoIEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+    <profileApplication xmi:id="_WdCq0JoKEeuM25Q6Xyzoqg">
+      <eAnnotations xmi:id="_WdCq0ZoKEeuM25Q6Xyzoqg" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://ARCHITECTUREREVIEW_PROFILES/ArchitectureReview.profile.uml#_ypx9siN3EeK_4-5pMoCxQg"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://ARCHITECTUREREVIEW_PROFILES/ArchitectureReview.profile.uml#_qTOicCN3EeK_4-5pMoCxQg"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_buTbAJoIEeuM25Q6Xyzoqg" base_Package="_baMMMJoIEeuM25Q6Xyzoqg">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:Generics xmi:id="_cERD8JoIEeuM25Q6Xyzoqg" genericsValue="Album" base_Element="_cEP10JoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cES5IJoIEeuM25Q6Xyzoqg" genericsValue="PlayList" base_Element="_cERrAJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cEUHQJoIEeuM25Q6Xyzoqg" genericsValue="AudioElement" base_Element="_cES5IZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cFE8QJoIEeuM25Q6Xyzoqg" genericsValue="UUID" base_Element="_cFDuIJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cFLp8JoIEeuM25Q6Xyzoqg" genericsValue="UUID" base_Element="_cFLC4JoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKQ-QJoIEeuM25Q6Xyzoqg" base_Element="_cKPwIJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKjSIJoIEeuM25Q6Xyzoqg" base_Element="_cKirEJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKj5MJoIEeuM25Q6Xyzoqg" base_Element="_cKjSIZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKlHUJoIEeuM25Q6Xyzoqg" base_Element="_cKj5MZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKluYJoIEeuM25Q6Xyzoqg" base_Element="_cKlHUZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKmVcJoIEeuM25Q6Xyzoqg" base_Element="_cKluYZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKnjkJoIEeuM25Q6Xyzoqg" base_Element="_cKm8gJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKoKoJoIEeuM25Q6Xyzoqg" base_Element="_cKnjkZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKoxsJoIEeuM25Q6Xyzoqg" base_Element="_cKoKoZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cKxUkJoIEeuM25Q6Xyzoqg" base_Element="_cKwtgJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cK4CQJoIEeuM25Q6Xyzoqg" genericsValue="Song" base_Element="_cK3bMJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cK5QYJoIEeuM25Q6Xyzoqg" genericsValue="AudioElement" base_Element="_cK4pUJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cK6egJoIEeuM25Q6Xyzoqg" base_Element="_cK53cJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cK8TsJoIEeuM25Q6Xyzoqg" genericsValue="Album" base_Element="_cK7soJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cK-I4JoIEeuM25Q6Xyzoqg" base_Element="_cK9h0JoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cK-v8ZoIEeuM25Q6Xyzoqg" base_Element="_cK-v8JoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cLAlIJoIEeuM25Q6Xyzoqg" base_Element="_cK_-EZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cLE2kJoIEeuM25Q6Xyzoqg" base_Element="_cLDocJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cLFdoJoIEeuM25Q6Xyzoqg" base_Element="_cLE2kZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cLHS0JoIEeuM25Q6Xyzoqg" genericsValue="UUID" base_Element="_cLGrwJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cLLkQJoIEeuM25Q6Xyzoqg" genericsValue="UUID" base_Element="_cLKWI5oIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cLP1sJoIEeuM25Q6Xyzoqg" base_Element="_cLPOoJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cLRD0JoIEeuM25Q6Xyzoqg" base_Element="_cLQcwJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cLRq4JoIEeuM25Q6Xyzoqg" base_Element="_cLRD0ZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cLSR8ZoIEeuM25Q6Xyzoqg" base_Element="_cLSR8JoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cLTgEpoIEeuM25Q6Xyzoqg" base_Element="_cLTgEZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLefMJoIEeuM25Q6Xyzoqg" base_Element="_cLdREJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLfGQJoIEeuM25Q6Xyzoqg" base_Element="_cLefMZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLgUYJoIEeuM25Q6Xyzoqg" base_Element="_cLfGQZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLiwoJoIEeuM25Q6Xyzoqg" base_Element="_cLiJk5oIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLj-wJoIEeuM25Q6Xyzoqg" base_Element="_cLjXsJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLkl0JoIEeuM25Q6Xyzoqg" base_Element="_cLj-wZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLlM4JoIEeuM25Q6Xyzoqg" base_Element="_cLkl0ZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLlM4poIEeuM25Q6Xyzoqg" base_Element="_cLlM4ZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLlz8ZoIEeuM25Q6Xyzoqg" base_Element="_cLlz8JoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLnpIJoIEeuM25Q6Xyzoqg" base_Element="_cLnCEZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLnpIpoIEeuM25Q6Xyzoqg" base_Element="_cLnpIZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLoQMJoIEeuM25Q6Xyzoqg" base_Element="_cLnpI5oIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cLo3QJoIEeuM25Q6Xyzoqg" genericsValue="UUID" base_Element="_cLoQMpoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLo3QZoIEeuM25Q6Xyzoqg" base_Element="_cLoQMpoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLqFYZoIEeuM25Q6Xyzoqg" base_Element="_cLqFYJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Generics xmi:id="_cLqscJoIEeuM25Q6Xyzoqg" genericsValue="UUID" base_Element="_cLqFYpoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLqscZoIEeuM25Q6Xyzoqg" base_Element="_cLqFYpoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLrTgZoIEeuM25Q6Xyzoqg" base_Element="_cLrTgJoIEeuM25Q6Xyzoqg">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_cLr6kJoIEeuM25Q6Xyzoqg" name="getGenre" method="_cMGxVZoIEeuM25Q6Xyzoqg">
+      <ownedParameter xmi:id="_cLshoJoIEeuM25Q6Xyzoqg" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+    <associatedElement xmi:type="uml:Operation" xmi:id="_cLr6kZoIEeuM25Q6Xyzoqg" name="setGenre" method="_cMGxV5oIEeuM25Q6Xyzoqg">
+      <ownedParameter xmi:id="_cLr6kpoIEeuM25Q6Xyzoqg" name="genre">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLtIsJoIEeuM25Q6Xyzoqg" base_Element="_cLshoZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLtvwJoIEeuM25Q6Xyzoqg" base_Element="_cLtIsZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLtvwpoIEeuM25Q6Xyzoqg" base_Element="_cLtvwZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_cLuW0JoIEeuM25Q6Xyzoqg" base_Element="_cLtvw5oIEeuM25Q6Xyzoqg"/>
+  <uml:OpaqueBehavior xmi:id="_cL8ZQJoIEeuM25Q6Xyzoqg" name="Category" specification="_cD8T0JoIEeuM25Q6Xyzoqg">
+    <ownedParameter xmi:id="_cL8ZQZoIEeuM25Q6Xyzoqg" name="category">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_cL8ZQpoIEeuM25Q6Xyzoqg" type="_cD5QgJoIEeuM25Q6Xyzoqg" direction="return"/>
+    <language>java</language>
+    <body>this.category = category;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_cL9AUJoIEeuM25Q6Xyzoqg" name="Genre" specification="_cEBMUJoIEeuM25Q6Xyzoqg">
+    <ownedParameter xmi:id="_cL9AUZoIEeuM25Q6Xyzoqg" name="genre">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_cL9AUpoIEeuM25Q6Xyzoqg" type="_cD-JAJoIEeuM25Q6Xyzoqg" direction="return"/>
+    <language>java</language>
+    <body>this.genre = genre;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_cL9nYJoIEeuM25Q6Xyzoqg" name="Language" specification="_cEFdwJoIEeuM25Q6Xyzoqg">
+    <ownedParameter xmi:id="_cL9nYZoIEeuM25Q6Xyzoqg" name="language">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <ownedParameter xmi:id="_cL9nYpoIEeuM25Q6Xyzoqg" type="_cEDBgJoIEeuM25Q6Xyzoqg" direction="return"/>
+    <language>java</language>
+    <body>this.language = language;&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_cMGxVZoIEeuM25Q6Xyzoqg" name="getGenre" specification="_cLr6kJoIEeuM25Q6Xyzoqg">
+    <ownedParameter xmi:id="_cMGxVpoIEeuM25Q6Xyzoqg" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return genre.getGenre();&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_cMGxV5oIEeuM25Q6Xyzoqg" name="setGenre" specification="_cLr6kZoIEeuM25Q6Xyzoqg">
+    <ownedParameter xmi:id="_cMHYYJoIEeuM25Q6Xyzoqg" name="genre">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>switch (genre.toLowerCase()) {&#xD;
+			case &quot;jazz&quot;:&#xD;
+			default:&#xD;
+				this.genre = Genre.JAZZ;&#xD;
+				break;&#xD;
+			case &quot;classic&quot;:&#xD;
+				this.genre = Genre.CLASSIC;&#xD;
+				break;&#xD;
+			case &quot;hiphop&quot;:&#xD;
+				this.genre = Genre.HIPHOP;&#xD;
+				break;&#xD;
+			case &quot;rock&quot;:&#xD;
+				this.genre = Genre.ROCK;&#xD;
+				break;&#xD;
+			case &quot;pop&quot;:&#xD;
+				this.genre = Genre.POP;&#xD;
+				break;&#xD;
+			case &quot;rap&quot;:&#xD;
+				this.genre = Genre.RAP;&#xD;
+				break;				&#xD;
+		}&#xD;
+	</body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_cMSXgJoIEeuM25Q6Xyzoqg" base_Element="_cMRwcJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMS-kJoIEeuM25Q6Xyzoqg" base_Element="_cMSXgZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMS-k5oIEeuM25Q6Xyzoqg" base_Element="_cMS-kZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMTlopoIEeuM25Q6Xyzoqg" base_Element="_cMTloJoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMUMsJoIEeuM25Q6Xyzoqg" base_Element="_cMTlo5oIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMUzwJoIEeuM25Q6Xyzoqg" base_Element="_cMUMsZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMUzw5oIEeuM25Q6Xyzoqg" base_Element="_cMUzwZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMVa0poIEeuM25Q6Xyzoqg" base_Element="_cMVa0JoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMWB4JoIEeuM25Q6Xyzoqg" base_Element="_cMVa05oIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMWo8JoIEeuM25Q6Xyzoqg" base_Element="_cMWB4ZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMXQAJoIEeuM25Q6Xyzoqg" base_Element="_cMWo8ZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMX3EJoIEeuM25Q6Xyzoqg" base_Element="_cMXQAZoIEeuM25Q6Xyzoqg"/>
+  <UMLLabProfile:Reference xmi:id="_cMZFMJoIEeuM25Q6Xyzoqg" base_Element="_cMYeIJoIEeuM25Q6Xyzoqg"/>
+</xmi:XMI>
