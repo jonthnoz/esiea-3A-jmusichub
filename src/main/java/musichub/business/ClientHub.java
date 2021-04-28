@@ -58,7 +58,7 @@ public class ClientHub {
 		return titleList.toString();
 	}
 	
-	/*public String getAudiobooksTitlesSortedByAuthor() {
+	public String getAudiobooksTitlesSortedByAuthor() {
 		StringBuffer titleList = new StringBuffer();
 		List<AudioElement> audioBookList = new ArrayList<AudioElement>();
 		for (AudioElement ae : elements)
@@ -89,7 +89,6 @@ public class ClientHub {
 				}
 			}
 		return songsInAlbum;		
-		
 	}
 	
 	public List<Song> getAlbumSongsSortedByGenre (String albumTitle) throws NoAlbumFoundException {
@@ -115,7 +114,7 @@ public class ClientHub {
 		
 	}
 
-	public void addElementToAlbum(String elementTitle, String albumTitle) throws NoAlbumFoundException, NoElementFoundException
+	/*public void addElementToAlbum(String elementTitle, String albumTitle) throws NoAlbumFoundException, NoElementFoundException
 	{
 		Album theAlbum = null;
 		int i = 0;
