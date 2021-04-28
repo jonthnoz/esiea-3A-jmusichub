@@ -4,7 +4,7 @@ import java.util.*;
 import musichub.util.*;
 import org.w3c.dom.*;
 
-class SortByDate implements Comparator<Album>
+/*class SortByDate implements Comparator<Album>
 {
 	public int compare(Album a1, Album a2) {
 			return a1.getDate().compareTo(a2.getDate());
@@ -23,68 +23,20 @@ class SortByAuthor implements Comparator<AudioElement>
 	public int compare(AudioElement e1, AudioElement e2) {
 			return e1.getArtist().compareTo(e2.getArtist());
 	} 
-}
+}*/
 	
-public class MusicHub {
+public class ClientHub {
 	private List<Album> albums;
 	private List<PlayList> playlists;
 	private List<AudioElement> elements;
 	
-	//public static final String DIR = System.getProperty("user.dir");
-	public static final String ALBUMS_FILE_PATH = "albums.xml";
-	public static final String PLAYLISTS_FILE_PATH = "playlists.xml";
-	public static final String ELEMENTS_FILE_PATH = "elements.xml";
-	
-	private XMLHandler xmlHandler = new XMLHandler();
-	
-	public MusicHub () {
-		albums = new LinkedList<Album>();
-		playlists = new LinkedList<PlayList>();
-		elements = new LinkedList<AudioElement>();
-		this.loadElements();
-		this.loadAlbums();
-		this.loadPlaylists();
-	}
-	
-	public List<AudioElement> getElements() {
-		return elements;
-	}
-	
-	public List<PlayList> getPlaylists() {
-		return playlists;
-	}
-	
-	public List<Album> getAlbums() {
-		return albums;
-	}
-	
-	public void addElement(AudioElement element) {
-		elements.add(element);
-	}
-	
-	public void addAlbum(Album album) {
-		albums.add(album);
-	}
-	
-	public void addPlaylist(PlayList playlist) {
-		playlists.add(playlist);
-	}
-	
-	public void deletePlayList(String playListTitle) throws NoPlayListFoundException {
+	public ClientHub (LinkedList<Album> albums, LinkedList<PlayList> playlists, LinkedList<AudioElement> elements) {
+		this.albums = albums;
+		this.playlists = playlists;
+		this.elements = elements;
 		
-		PlayList thePlayList = null;
-		boolean result = false;
-		for (PlayList pl : playlists) {
-			if (pl.getTitle().toLowerCase().equals(playListTitle.toLowerCase())) {
-				thePlayList = pl;
-				break;
-			}
-		}
-		
-		if (thePlayList != null)  		
-			result = playlists.remove(thePlayList); 
-		if (!result) throw new NoPlayListFoundException("Playlist " + playListTitle + " not found!");
 	}
+	
 	
 	public Iterator<Album> albums() { 
 		return albums.listIterator();
@@ -106,7 +58,7 @@ public class MusicHub {
 		return titleList.toString();
 	}
 	
-	public String getAudiobooksTitlesSortedByAuthor() {
+	/*public String getAudiobooksTitlesSortedByAuthor() {
 		StringBuffer titleList = new StringBuffer();
 		List<AudioElement> audioBookList = new ArrayList<AudioElement>();
 		for (AudioElement ae : elements)
@@ -348,4 +300,5 @@ public class MusicHub {
 		}
 		xmlHandler.createXMLFile(document, ELEMENTS_FILE_PATH);
  	}	
+ 	*/
 }
