@@ -1,7 +1,7 @@
 package musichub.business;
 import java.io.*;  
 import java.net.*; 
-import java.util.LinkedList;
+import java.util.*;
 
 public class SimpleClient {
 	
@@ -23,7 +23,79 @@ public class SimpleClient {
             
             theHub = new ClientHub((LinkedList<Album>) input.readObject(), (LinkedList<PlayList>) input.readObject(), (LinkedList<AudioElement>) input.readObject());
 			
-            System.out.println(theHub.getAlbumsTitlesSortedByDate());
+    		System.out.println("Type h for available commands");
+            
+            Scanner scan = new Scanner(System.in);
+    		String choice = scan.nextLine();
+    		
+    		String albumTitle = null;
+    		    		
+    		while (choice.length() > 0 && choice.charAt(0)!= 'q') 	{
+    			switch (choice.charAt(0)) 	{
+    				case 'h':
+    					printAvailableCommands();
+    					choice = scan.nextLine();
+    				break;
+    				case 't':
+    					//album titles, ordered by date
+    					System.out.println(theHub.getAlbumsTitlesSortedByDate());
+    					printAvailableCommands();
+    					choice = scan.nextLine();
+    				break;
+    				case 'g':
+    					//songs of an album, sorted by genre
+    					System.out.println("Songs of an album sorted by genre will be displayed; enter the album name, available albums are:");
+    					System.out.println(theHub.getAlbumsTitlesSortedByDate());
+    					
+    					albumTitle = scan.nextLine();
+    					try {
+    						System.out.println(theHub.getAlbumSongsSortedByGenre(albumTitle));
+    					} catch (NoAlbumFoundException ex) {
+    						System.out.println("No album found with the requested title " + ex.getMessage());
+    					}
+    					printAvailableCommands();
+    					choice = scan.nextLine();
+    				break;
+    				case 'd':
+    					//songs of an album
+    					System.out.println("Songs of an album will be displayed; enter the album name, available albums are:");
+    					System.out.println(theHub.getAlbumsTitlesSortedByDate());
+    					
+    					albumTitle = scan.nextLine();
+    					try {
+    						System.out.println(theHub.getAlbumSongs(albumTitle));
+    					} catch (NoAlbumFoundException ex) {
+    						System.out.println("No album found with the requested title " + ex.getMessage());
+    					}
+    					printAvailableCommands();
+    					choice = scan.nextLine();
+    				break;
+    				case 'l':
+    					//audiobooks ordered by author
+    					System.out.println(theHub.getAudiobooksTitlesSortedByAuthor());
+    					printAvailableCommands();
+    					choice = scan.nextLine();
+    				break;
+    				/*case 'u':
+    					//save elements, albums, playlists
+    					theHub.saveElements();
+    					theHub.saveAlbums();
+    					theHub.savePlayLists();
+    					System.out.println("Elements, albums and playlists saved!");
+    					printAvailableCommands();
+    					choice = scan.nextLine();
+    				break;*/
+    				default:
+    				
+    				break;
+    			}
+    		}
+    		scan.close();
+    	
+            
+            
+            
+            
 			/*String textToSend = new String("send me the student info!");
 			System.out.println("text sent to the server: " + textToSend);			
 			output.writeObject(textToSend);		//serialize and write the String to the stream
@@ -48,5 +120,14 @@ public class SimpleClient {
 				ioe.printStackTrace();
 			}
 		}
+	}
+
+	private static void printAvailableCommands() {
+		System.out.println("t: display the album titles, ordered by date");
+		System.out.println("g: display songs of an album, ordered by genre");
+		System.out.println("d: display songs of an album");
+		System.out.println("l: display audiobooks ordered by author");
+		//System.out.println("u: save elements, albums, playlists");
+		System.out.println("q: quit program");
 	}
 }

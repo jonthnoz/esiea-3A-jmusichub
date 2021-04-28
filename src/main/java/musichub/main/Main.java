@@ -21,8 +21,7 @@ public class Main
 
 	        if ("client".equals(args[0])) {
 	            SimpleClient c1 = new SimpleClient();
-	            
-					c1.connect("localhost");
+				c1.connect("localhost");
 		        
 				/*catch (CommunicationErrorException e) 
 				{
