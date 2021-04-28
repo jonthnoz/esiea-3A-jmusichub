@@ -2,6 +2,8 @@ package musichub.main;
 import musichub.business.*;
 import java.util.*;
 
+import org.xml.sax.SAXException;
+
 import java.beans.XMLEncoder;
 import java.io.FileOutputStream;
 import java.io.BufferedOutputStream;
@@ -10,7 +12,28 @@ public class Main
 {
  	public static void main (String[] args) {
 
-		MusicHub theHub = new MusicHub ();
+ 		if (args.length > 0) {
+			if ("server".equals(args[0])) {
+	            AbstractServer as = new FirstServer();
+				String ip = "localhost";
+				as.connect(ip);;
+	        }
+
+	        if ("client".equals(args[0])) {
+	            SimpleClient c1 = new SimpleClient();
+	            
+					c1.connect("localhost");
+		        
+				/*catch (CommunicationErrorException e) 
+				{
+					System.out.println("Client exception: " + e.getMessage());
+					e.printStackTrace();
+				}*/
+	        }
+	    }
+ 		
+ 		/*
+ 		MusicHub theHub = new MusicHub ();
 		
 		System.out.println("Type h for available commands");
 		
@@ -248,5 +271,6 @@ public class Main
 		System.out.println("-: delete an existing playlist");
 		System.out.println("s: save elements, albums, playlists");
 		System.out.println("q: quit program");
+	*/
 	}
 }
