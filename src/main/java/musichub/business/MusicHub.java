@@ -3,6 +3,7 @@ package musichub.business;
 import java.util.*;
 import musichub.util.*;
 import org.w3c.dom.*;
+import java.io.File;
 
 class SortByDate implements Comparator<Album>
 {
@@ -291,7 +292,6 @@ public class MusicHub {
 		}
 	}
 
-
 	public void saveAlbums () {
 		Document document = xmlHandler.createXMLDocument();
 		if (document == null) return;
@@ -348,4 +348,16 @@ public class MusicHub {
 		}
 		xmlHandler.createXMLFile(document, ELEMENTS_FILE_PATH);
  	}	
+	
+	/*
+	public void checkAudioFiles() {
+		String dirName = "files/";
+        
+        File fileName = new File(dirName);
+        File[] fileList = fileName.listFiles();
+        
+        for (File file: fileList) {
+            System.out.println(file.getName());
+        }
+	}*/
 }

@@ -1,1 +1,21 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><playlists><playlist><title>my favourite songs</title><UUID>e90e2cb0-707a-48a9-8d03-8b3daeda5c0e</UUID><elements><UUID>b2ee0ca0-b5e2-4bc9-8fed-7932fb145f2f</UUID><UUID>44136020-dc80-4522-9b71-2b9aad5e3039</UUID></elements></playlist><playlist><title>my third playlist</title><UUID>23173338-8b6e-4174-af71-2fe8eef705da</UUID><elements><UUID>bbe99998-1be6-4a40-8bf0-6a7fce9087c9</UUID><UUID>6b834132-0a30-4b83-9835-814121b963a1</UUID><UUID>66d277ca-cbc4-471c-a07e-082362275bcc</UUID></elements></playlist></playlists>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<playlists>
+	<playlist>
+		<title>my favourite songs</title>
+		<UUID>998c65d0-6a9c-49d4-a40d-8894caea092c</UUID>
+		<elements>
+			<UUID>9a42f70e-38e3-4aa6-8ed5-4229394f69fb</UUID>
+			<UUID>04dad734-77e7-468e-b3c7-489d8eb7ad14</UUID>
+			<UUID>980db895-9a38-46bd-8f42-29023f0f3485</UUID>
+		</elements>
+	</playlist>
+	<playlist>
+		<title>my third playlist</title>
+		<UUID>35d899bf-e5fb-43cf-a36d-a27733fc510f</UUID>
+		<elements>
+			<UUID>6f4bf6ee-f992-4102-9081-123b1c3d5824</UUID>
+			<UUID>5e3051a4-8ffa-44f6-9ffa-bef51b65965a</UUID>
+			<UUID>91375fc4-cdd2-4827-b79a-6d96cf88ca74</UUID>
+		</elements>
+	</playlist>
+</playlists>

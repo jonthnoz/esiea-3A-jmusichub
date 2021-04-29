@@ -1,12 +1,6 @@
 package musichub.main;
+
 import musichub.business.*;
-import java.util.*;
-
-import org.xml.sax.SAXException;
-
-import java.beans.XMLEncoder;
-import java.io.FileOutputStream;
-import java.io.BufferedOutputStream;
 	
 public class Main
 {
@@ -21,15 +15,19 @@ public class Main
 
 	        if ("client".equals(args[0])) {
 	            SimpleClient c1 = new SimpleClient();
-				c1.connect("localhost");
-		        
-				/*catch (CommunicationErrorException e) 
-				{
-					System.out.println("Client exception: " + e.getMessage());
-					e.printStackTrace();
-				}*/
+				c1.connect("localhost");		
+	        }
+	        
+	        if ("serverConsole".equals(args[0])) {
+	        	new ConsoleThread().start();
 	        }
 	    }
+ 		
+ 		/*catch (CommunicationErrorException e) 
+		{
+			System.out.println("Client exception: " + e.getMessage());
+			e.printStackTrace();
+		}*/
  		
  		/*
  		MusicHub theHub = new MusicHub ();

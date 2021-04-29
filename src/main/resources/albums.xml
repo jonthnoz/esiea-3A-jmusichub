@@ -1,1 +1,61 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><albums><album><title>Best of Beatles</title><artist/><lengthInSeconds>2160</lengthInSeconds><UUID>55a1e629-ef8c-4554-be90-7668105724cd</UUID><date>1970-12-10</date><songs><UUID>66d277ca-cbc4-471c-a07e-082362275bcc</UUID><UUID>6b834132-0a30-4b83-9835-814121b963a1</UUID><UUID>b2ee0ca0-b5e2-4bc9-8fed-7932fb145f2f</UUID><UUID>bbe99998-1be6-4a40-8bf0-6a7fce9087c9</UUID><UUID>66d277ca-cbc4-471c-a07e-082363375bcc</UUID></songs></album><album><title>ABBA Gold</title><artist/><lengthInSeconds>3490</lengthInSeconds><UUID>f015cb19-ed91-47cc-a262-12f5348e6f89</UUID><date>1978-01-23</date><songs><UUID>44136020-dc80-4522-9b71-2b9aad5e3039</UUID></songs></album></albums>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<albums>
+    <album>
+        <title>Anthology: Jackson 5</title>
+        <artist>Jackson 5</artist>
+        <lengthInSeconds>1558</lengthInSeconds>
+        <UUID>7aa8210c-6d14-48a1-94a2-3d623631059f</UUID>
+        <date>1976-15-06</date>
+        <songs>
+            <UUID>ed14e929-5ee3-4c20-b512-d3d36bbc1890</UUID>
+            <UUID>9a42f70e-38e3-4aa6-8ed5-4229394f69fb</UUID>
+            <UUID>ec46998e-433c-4221-8523-320c6d559660</UUID>
+            <UUID>ed14e929-5ee3-4c20-b512-d3d36bbc1890</UUID>
+            <UUID>91375fc4-cdd2-4827-b79a-6d96cf88ca74</UUID>
+            <UUID>d6916ca0-f461-4fbd-9d8c-1f2f6d5b5112</UUID>
+            <UUID>65e4b140-33a5-482d-a742-6de69adf2fe6</UUID>
+            <UUID>01255c8f-a582-4da7-a4bb-49284281418c</UUID>
+            <UUID>ae8181fd-be2e-4a47-8c50-d6d032f1c3ff</UUID>
+        </songs>
+    </album>
+    <album>
+        <title>Let It Be... Naked</title>
+        <artist>The Beatles</artist>
+        <lengthInSeconds>1498</lengthInSeconds>
+        <UUID>78994115-f04f-44dc-bb46-bf85bb42dcda</UUID>
+        <date>2003-11-17</date>
+        <songs>
+            <UUID>2c948c18-dc0c-4146-a895-8157412b388d</UUID>
+            <UUID>f7dd9df3-b00b-4641-b611-64a84f1fd38f</UUID>
+            <UUID>45cc01ca-0b89-407d-8557-4c630b353cf8</UUID>
+            <UUID>437b402e-4712-467d-85bc-2d7183c8ca50</UUID>
+            <UUID>3f4cba7e-0994-4668-bf7a-9fcbdfe1494d</UUID>
+            <UUID>5e3051a4-8ffa-44f6-9ffa-bef51b65965a</UUID>
+            <UUID>32c01f81-2e24-4397-968e-04750f1a8bc6</UUID>
+        </songs>
+    </album>
+    <album>
+        <title>Wild Is The Wind</title>
+        <artist>Nina Simone</artist>
+        <lengthInSeconds>705</lengthInSeconds>
+        <UUID>174b284d-bde8-4523-8a6c-560ee9d89066</UUID>
+        <date>1966-09-16</date>
+        <songs>
+            <UUID>53df5f3f-507f-43c1-a7e3-1df89c286a5f</UUID>
+            <UUID>8664b4ad-a0d8-4447-b666-1e80185d7d37</UUID>
+            <UUID>34e4fb2f-052b-449a-bd56-9e99888375cf</UUID>
+            <UUID>04dad734-77e7-468e-b3c7-489d8eb7ad14</UUID>
+        </songs>
+    </album>
+    <album>
+        <title>Welcome To The Jungle</title>
+        <artist>Rilès</artist>
+        <lengthInSeconds>369</lengthInSeconds>
+        <UUID>15be1a48-bd0b-4be8-bdcb-13411de0c22b</UUID>
+        <date>2019-08-30</date>
+        <songs>
+            <UUID>324c807c-9090-45c9-98e5-e58254ad4c16</UUID>
+            <UUID>6f4bf6ee-f992-4102-9081-123b1c3d5824</UUID>
+        </songs>
+    </album>
+</albums>
