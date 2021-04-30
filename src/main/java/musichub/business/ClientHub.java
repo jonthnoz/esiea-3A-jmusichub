@@ -10,6 +10,7 @@ public class ClientHub {
 	private List<AudioElement> elements;
 	private AudioInputStream audioStream;
     private Clip audioClip = null;
+    private long trackPosition;
 	
 	public ClientHub (LinkedList<Album> albums, LinkedList<PlayList> playlists, LinkedList<AudioElement> elements) {
 		this.albums = albums;
@@ -108,7 +109,7 @@ public class ClientHub {
         else return false;
 	}
 	
-	public void playSound(InputStream in) {
+	public void startNewSound(InputStream in) {
 		InputStream bufferedIn = new BufferedInputStream(in);
 	 	try {
 	 		audioStream = AudioSystem.getAudioInputStream(bufferedIn);
@@ -137,6 +138,21 @@ public class ClientHub {
             System.out.println("Error playing the audio file.");
             ex.printStackTrace();
         }      
+	}
+	
+	public void playPauseSound() {
+		if (audioClip != null) {
+			if (audioClip.isOpen()) {
+				if (audioClip.isActive()) {
+					trackPosition = audioClip.getMicrosecondPosition();
+					audioClip.stop();
+				}
+				else {
+					audioClip.setMicrosecondPosition(trackPosition);
+					audioClip.start();
+				}	
+			}
+		}
 	}
 	
 	/*public void addElementToAlbum(String elementTitle, String albumTitle) throws NoAlbumFoundException, NoElementFoundException
