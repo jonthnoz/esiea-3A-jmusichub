@@ -7,9 +7,13 @@ public class SimpleClient {
 	
 	private ObjectOutputStream output;
 	private ObjectInputStream input;
+	private InputStream in;
 	private Socket socket;
 	private ClientHub theHub;
-	
+	public static final Integer ASK_PLAY = 0;
+	public static final Integer ASK_UPDATE = 1;
+	public static final Integer QUIT = 2;
+
 	public void connect(String ip) //throws CommunicationErrorException
 	{
 		int port = 6666;
@@ -21,6 +25,8 @@ public class SimpleClient {
 			output = new ObjectOutputStream(socket.getOutputStream());
             input = new ObjectInputStream(socket.getInputStream());
             
+			in = socket.getInputStream();
+    		
             theHub = new ClientHub((LinkedList<Album>) input.readObject(), (LinkedList<PlayList>) input.readObject(), (LinkedList<AudioElement>) input.readObject());
 			
     		System.out.println("Type h for available commands");
@@ -85,23 +91,38 @@ public class SimpleClient {
     					printAvailableCommands();
     					choice = scan.nextLine();
     				break;*/
+    				case 's':
+    					System.out.println("Type the name of the song you wish to listen. Available songs: ");
+    					Iterator<AudioElement> itae = theHub.elements();
+    					while (itae.hasNext()) {
+    						AudioElement ae = itae.next();
+    						if ( ae instanceof Song) System.out.println(ae.getTitle());
+    					}
+    					String songTitle = scan.nextLine();
+    					if (theHub.findElement(songTitle)) 
+    					{ 
+    						output.writeObject(ASK_PLAY); 
+    						output.writeObject(songTitle); 
+    						output.reset();
+    						Integer response = (Integer) input.readObject();
+    						if (response.equals(ServerThread.OK_RESPONSE)) {
+    					        System.out.println("stream received"); // log
+    					        theHub.playSound(in);
+    						} 
+    						else System.out.println ("File not found on server!");
+    					}
+    					else System.out.println ("Song " + songTitle + " not found!");
+    					
+    					printAvailableCommands();
+                        choice = scan.nextLine();
     				default:
     				
     				break;
     			}
     		}
-    		scan.close();
-    	
+    		scan.close();     
+    		output.writeObject(QUIT);
             
-            
-            
-            
-			/*String textToSend = new String("send me the student info!");
-			System.out.println("text sent to the server: " + textToSend);			
-			output.writeObject(textToSend);		//serialize and write the String to the stream
- 
-			Student student = (Student) input.readObject();	//deserialize and read the Student object from the stream
-			System.out.println("Received student id: " + student.getID() + " and student name:" + student.getName() + " from server");*/
 	    } catch  (UnknownHostException uhe) {
 			uhe.printStackTrace();
 		}
@@ -113,6 +134,7 @@ public class SimpleClient {
 		}
 		finally {
 			try {
+				in.close();
 				input.close();
 				output.close();
 				socket.close();
@@ -123,11 +145,14 @@ public class SimpleClient {
 	}
 
 	private static void printAvailableCommands() {
+		System.out.println("");
 		System.out.println("t: display the album titles, ordered by date");
 		System.out.println("g: display songs of an album, ordered by genre");
 		System.out.println("d: display songs of an album");
 		System.out.println("l: display audiobooks ordered by author");
-		//System.out.println("u: save elements, albums, playlists");
+		//System.out.println("u: update elements, albums, playlists");
+		System.out.println("s: play a song");
+		//System.out.println("a: add a song to queue");
 		System.out.println("q: quit program");
 	}
 }
