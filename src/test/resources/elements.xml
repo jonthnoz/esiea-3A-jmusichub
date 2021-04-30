@@ -1,1 +1,223 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><elements><song><title>Here Comes the Sun</title><artist>The Beatles</artist><length>186</length><UUID>66d277ca-cbc4-471c-a07e-082362275bcc</UUID><content>here_comes_the_sun.mp3</content><genre>pop</genre></song><song><title>I Want to Hold your Hand</title><artist>The Beatles</artist><length>186</length><UUID>66d277ca-cbc4-471c-a07e-082363375bcc</UUID><content>i_want_to_hold_your_hand.mp3</content><genre>rock</genre></song><song><title>Something</title><artist>The Beatles</artist><length>182</length><UUID>6b834132-0a30-4b83-9835-814121b963a1</UUID><content>something.mp3</content><genre>pop</genre></song><audiobook><title>Producing the Beatles</title><artist>Jason Kruppa</artist><length>1640</length><UUID>9a744375-95cb-4f25-8dfd-f488e0f2e1f1</UUID><content>producing_the_beatles.mp3</content><language>english</language><category>documentary</category></audiobook><audiobook><title>Snow White</title><artist>Disney</artist><length>999</length><UUID>c88c33dc-6c56-42d5-8381-202c679558e4</UUID><content>name.mp3</content><language>english</language><category>youth</category></audiobook><song><title>Julia</title><artist>The Beatles</artist><length>176</length><UUID>b2ee0ca0-b5e2-4bc9-8fed-7932fb145f2f</UUID><content>julia.mp3</content><genre>pop</genre></song><audiobook><title>Hamlet</title><artist>Shakespeare</artist><length>10800</length><UUID>804d2dea-3e49-4c42-99f6-e195d3a68da7</UUID><content>hamlet.mp3</content><language>english</language><category>theater</category></audiobook><song><title>Yesterday</title><artist>The Beatles</artist><length>180</length><UUID>bbe99998-1be6-4a40-8bf0-6a7fce9087c9</UUID><content>yesterday.mp3</content><genre>pop</genre></song><song><title>Mamma Mia</title><artist>ABBA</artist><length>213</length><UUID>a9b8d71a-70af-4f6a-a908-ad09ec8345d3</UUID><content>mamma_mia.mp3</content><genre>pop</genre></song><song><title>Dancing Queen</title><artist>ABBA</artist><length>230</length><UUID>18c49fcc-3b6e-4743-884f-89274a8a2e9a</UUID><content>dancing_queen.mp3</content><genre>pop</genre></song><song><title>Fernando</title><artist>ABBA</artist><length>252</length><UUID>44136020-dc80-4522-9b71-2b9aad5e3039</UUID><content>fernando.mp3</content><genre>pop</genre></song><song><title>The name of the game</title><artist>ABBA</artist><length>291</length><UUID>a2a19231-d244-4440-ad2a-41315e5ca00a</UUID><content>the_name_of_the_game.mp3</content><genre>pop</genre></song><song><title>The winner takes it all</title><artist>ABBA</artist><length>254</length><UUID>383c9337-6a58-40aa-ac4d-83fd964a397c</UUID><content>the_winner_takes_it_all.mp3</content><genre>pop</genre></song></elements>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<elements>
+	<song>
+        <UUID>2c948c18-dc0c-4146-a895-8157412b388d</UUID>
+        <title>Let It Be</title>
+        <artist>The Beatles</artist>
+        <length>135</length>
+        <content>let_it_be.mp3</content>
+        <genre>ROCK</genre>
+    </song>
+    <song>
+        <UUID>f7dd9df3-b00b-4641-b611-64a84f1fd38f</UUID>
+        <title>Don't Let Me Down</title>
+        <artist>The Beatles</artist>
+        <length>199</length>
+        <content>dont_let_me_down.mp3</content>
+        <genre>ROCK</genre>
+    </song>
+    <song>
+        <UUID>45cc01ca-0b89-407d-8557-4c630b353cf8</UUID>
+        <title>Dig A Pony</title>
+        <artist>The Beatles</artist>
+        <length>218</length>
+        <content>dig_a_pony.mp3</content>
+        <genre>ROCK</genre>
+    </song>
+    <song>
+        <UUID>437b402e-4712-467d-85bc-2d7183c8ca50</UUID>
+        <title>Two of Us</title>
+        <artist>The Beatles</artist>
+        <length>201</length>
+        <content>two_of_us.mp3</content>
+        <genre>ROCK</genre>
+    </song>
+    <song>
+        <UUID>3f4cba7e-0994-4668-bf7a-9fcbdfe1494d</UUID>
+        <title>I've Got a Feeling</title>
+        <artist>The Beatles</artist>
+        <length>211</length>
+        <content>ive_got_a_feeling.mp3</content>
+        <genre>ROCK</genre>
+    </song>
+    <song>
+        <UUID>5e3051a4-8ffa-44f6-9ffa-bef51b65965a</UUID>
+        <title>Across the Universe</title>
+        <artist>The Beatles</artist>
+        <length>218</length>
+        <content>accross_the_universe.mp3</content>
+        <genre>ROCK</genre>
+    </song>
+    <song>
+        <UUID>32c01f81-2e24-4397-968e-04750f1a8bc6</UUID>
+        <title>I Me Mine</title>
+        <artist>The Beatles</artist>
+        <length>142</length>
+        <content>i_me_mine.mp3</content>
+        <genre>ROCK</genre>
+    </song>
+    <song>
+        <UUID>ed14e929-5ee3-4c20-b512-d3d36bbc1890</UUID>
+        <title>I Want You Back</title>
+        <artist>Jackson 5</artist>
+        <length>179</length>
+        <content>i_want_you_back.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <song>
+        <UUID>9a42f70e-38e3-4aa6-8ed5-4229394f69fb</UUID>
+        <title>ABC</title>
+        <artist>Jackson 5</artist>
+        <length>178</length>
+        <content>abc.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <song>
+        <UUID>ec46998e-433c-4221-8523-320c6d559660</UUID>
+        <title>I'll Be There</title>
+        <artist>Jackson 5</artist>
+        <length>231</length>
+        <content>ill_be_there.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <song>
+        <UUID>91375fc4-cdd2-4827-b79a-6d96cf88ca74</UUID>
+        <title>Mama's Pearl</title>
+        <artist>Jackson 5</artist>
+        <length>191</length>
+        <content>mamas_pearl.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <song>
+        <UUID>d6916ca0-f461-4fbd-9d8c-1f2f6d5b5112</UUID>
+        <title>The Love You Save</title>
+        <artist>Jackson 5</artist>
+        <length>183</length>
+        <content>the_love_you_save.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <song>
+        <UUID>65e4b140-33a5-482d-a742-6de69adf2fe6</UUID>
+        <title>Never Can Say Goodbye</title>
+        <artist>Jackson 5</artist>
+        <length>180</length>
+        <content>never_can_say_goodbye.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <song>
+        <UUID>01255c8f-a582-4da7-a4bb-49284281418c</UUID>
+        <title>Doctor My Eyes</title>
+        <artist>Jackson 5</artist>
+        <length>192</length>
+        <content>doctor_my_eyes.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <song>
+        <UUID>ae8181fd-be2e-4a47-8c50-d6d032f1c3ff</UUID>
+        <title>The Life of The Party</title>
+        <artist>Jackson 5</artist>
+        <length>144</length>
+        <content>the_life_of_the_party.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <song>
+        <UUID>53df5f3f-507f-43c1-a7e3-1df89c286a5f</UUID>
+        <title>Four Women</title>
+        <artist>Nina Simone</artist>
+        <length>268</length>
+        <content>four_women.mp3</content>
+        <genre>JAZZ</genre>
+    </song>
+    <song>
+        <UUID>8664b4ad-a0d8-4447-b666-1e80185d7d37</UUID>
+        <title>What More Can I Say?</title>
+        <artist>Nina Simone</artist>
+        <length>172</length>
+        <content>what_more_can_i_say.mp3</content>
+        <genre>JAZZ</genre>
+    </song>
+    <song>
+        <UUID>34e4fb2f-052b-449a-bd56-9e99888375cf</UUID>
+        <title>That's All I Ask</title>
+        <artist>Nina Simone</artist>
+        <length>153</length>
+        <content>thats_all_i_ask.mp3</content>
+        <genre>JAZZ</genre>
+    </song>
+    <song>
+        <UUID>04dad734-77e7-468e-b3c7-489d8eb7ad14</UUID>
+        <title>I Love Your Lovin' Ways</title>
+        <artist>Nina Simone</artist>
+        <length>160</length>
+        <content>i_love_your_lovin_ways.mp3</content>
+        <genre>JAZZ</genre>
+    </song>
+    <song>
+        <UUID>7ae224b1-432c-44f7-807a-7c435d7abc32</UUID>
+        <title>Ladyfingers</title>
+        <artist>Herb Alpert &amp; The Tijuana Brass</artist>
+        <length>165</length>
+        <content>ladyfingers.mp3</content>
+        <genre>JAZZ</genre>
+    </song>
+    <song>
+        <UUID>324c807c-9090-45c9-98e5-e58254ad4c16</UUID>
+        <title>E a Verdade</title>
+        <artist>Rilès</artist>
+        <length>193</length>
+        <content>e_a_verdade.mp3</content>
+        <genre>RAP</genre>
+    </song>
+    <song>
+        <UUID>6f4bf6ee-f992-4102-9081-123b1c3d5824</UUID>
+        <title>I Love You</title>
+        <artist>Rilès</artist>
+        <length>173</length>
+        <content>i_love_you.mp3</content>
+        <genre>RAP</genre>
+    </song>
+    <song>
+        <UUID>980db895-9a38-46bd-8f42-29023f0f3485</UUID>
+        <title>Billie Jean</title>
+        <artist>Michael Jackson</artist>
+        <length>294</length>
+        <content>Billie Jean.mp3</content>
+        <genre>POP</genre>
+    </song>
+    <audiobook>
+        <UUID>bb465e5c-9c3d-41c3-adab-d23f0bdc4712</UUID>
+        <title>Harry Potter and the philosopher's stone</title>
+        <artist>J.K. Rowling</artist>
+        <length>28846</length>
+        <content>harry_potter_1.mp3</content>
+        <category>novel</category>
+        <language>english</language>
+    </audiobook>
+    <audiobook>
+        <UUID>1c39f871-7c16-46de-b56a-53adb9695ad1</UUID>
+        <title>Learn Java: A Crash Course GuUUIDe to Learn Java in 1 Week</title>
+        <artist>Timothy C. Needham</artist>
+        <length>17934</length>
+        <content>learn_java.mp3</content>
+        <category>documentary</category>
+        <language>english</language>
+    </audiobook>
+    <audiobook>
+        <UUID>551d4d29-c8d4-4322-82c6-93f2f9d8ef32</UUID>
+        <title>Discours du 21 mai 1981</title>
+        <artist>François Mitterand</artist>
+        <length>183</length>
+        <content>discours_du_21_mai_1981.mp3</content>
+        <category>speech</category>
+        <language>french</language>
+    </audiobook>
+    <audiobook>
+        <UUID>29153beb-1b9c-4852-9eb7-c42c2b03e9d9</UUID>
+        <title>Alice au pays des merveilles</title>
+        <artist>Lewis Carroll</artist>
+        <length>30741</length>
+        <content>Alice au pays des merveilles.mp3</content>
+        <category>youth</category>
+        <language>french</language>
+    </audiobook>
+</elements>
