@@ -92,7 +92,7 @@ public class SimpleClient {
     					choice = scan.nextLine();
     				break;*/
     				case 's':
-    					// play a song from list of existing songs
+    					// play or queue a song from list of existing songs
     					System.out.println("Type the name of the song you wish to listen. Available songs: ");
     					Iterator<AudioElement> itae = theHub.elements();
     					while (itae.hasNext()) {
@@ -101,27 +101,91 @@ public class SimpleClient {
     					}
     					String songTitle = scan.nextLine();
     					if (theHub.findElement(songTitle)) 
-    					{ 
+    					{ 	
     						output.writeObject(ASK_PLAY); 
     						output.writeObject(songTitle); 
     						output.reset();
     						Integer response = (Integer) input.readObject();
     						if (response.equals(ServerThread.OK_RESPONSE)) {
     					        System.out.println("stream received"); // log
-    					        theHub.startNewSound(in);
+    					        System.out.println("Type f to add '" + songTitle + "' to the queue or x to start it");
+        						String command = scan.nextLine();
+        						if (command.length() > 0 && command.charAt(0) == 'f') 
+        								theHub.addSongToQueue(in);
+        						else 
+        						theHub.startNewSound(in);
     						} 
     						else System.out.println ("File not found on server!");
+							
     					}
     					else System.out.println ("Song " + songTitle + " not found!");
     					printAvailableCommands();
                         choice = scan.nextLine();
                     break;
+    				case 'a' :
+    					//  add songs of an album to queue
+    					System.out.println("Which album do you want to listen? Available albums:");
+    					System.out.println(theHub.getAlbumsTitlesSortedByDate());    					
+    					albumTitle = scan.nextLine();
+    					try {
+    						for (AudioElement el : theHub.getAlbumSongs(albumTitle)) {
+    							output.writeObject(ASK_PLAY); 
+        						output.writeObject(el.getTitle()); 
+        						output.reset();
+        						Integer response = (Integer) input.readObject();
+        						if (response.equals(ServerThread.OK_RESPONSE)) {
+        					        //System.out.println("stream received"); // log		 
+            						theHub.addSongToQueue(in);           						
+        						} 
+        						else System.out.println ("File not found on server : " + el.getTitle());
+    						}
+    						System.out.println("Added to queue");
+    					} catch (NoAlbumFoundException ex) {
+    						System.out.println("No album found with the requested title " + ex.getMessage());
+    					}
+    					printAvailableCommands();
+                        choice = scan.nextLine();
+    				break;
+    				case 'j' :
+    					// add songs of a playlist to queue
+    					System.out.println("Which playlist do you want to listen? Available playlists:");
+    					Iterator<PlayList> itp = theHub.playlists();
+    					while (itp.hasNext()) {
+    						PlayList p = itp.next();
+    						System.out.println(p.getTitle());
+    					}
+    					String plTitle = scan.nextLine();    					
+    					try {
+    						for (AudioElement el : theHub.getPlaylistSongs(plTitle)) {
+	    							output.writeObject(ASK_PLAY); 
+	        						output.writeObject(el.getTitle()); 
+	        						output.reset();
+	        						Integer response = (Integer) input.readObject();
+	        						if (response.equals(ServerThread.OK_RESPONSE)) {
+	        					        //System.out.println("stream received"); // log		 
+	            						theHub.addSongToQueue(in);           						
+	        						} 
+	        						else System.out.println ("File not found on server : " + el.getTitle());
+    						}
+    						System.out.println("Added to queue");
+    					} catch (NoPlayListFoundException ex) {
+    						System.out.println("No album found with the requested title " + ex.getMessage());
+    					}
+    					printAvailableCommands();
+                        choice = scan.nextLine();
+    				break;
     				case 'p' :
     					// pause/play music
     					theHub.playPauseSound();
     					printAvailableCommands();
                         choice = scan.nextLine();
     				break;
+    				case 'n' :
+    					// play next music
+    					theHub.playNext();
+    					printAvailableCommands();
+                        choice = scan.nextLine();
+        			break;
     				default:
     				
     				break;
@@ -159,9 +223,10 @@ public class SimpleClient {
 		System.out.println("l: display audiobooks ordered by author");
 		//System.out.println("u: update elements, albums, playlists");
 		System.out.println("s: select a song to play");
+		System.out.println("a: select an album to play");
+		System.out.println("j: select a playlist to play");
 		System.out.println("p: play/pause the current track");
-
-		//System.out.println("a: add a song to queue");
+		System.out.println("n: play the next song in the queue");
 		System.out.println("q: quit program");
 	}
 }
