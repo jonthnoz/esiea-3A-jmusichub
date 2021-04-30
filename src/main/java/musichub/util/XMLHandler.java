@@ -22,6 +22,7 @@ public class XMLHandler {
 		try {
 			transformerFactory = TransformerFactory.newInstance();
 			transformer = transformerFactory.newTransformer();
+			transformer.setOutputProperty(OutputKeys.INDENT, "yes");
 			documentFactory = DocumentBuilderFactory.newInstance();
 			documentBuilder = documentFactory.newDocumentBuilder();
 		} catch (TransformerException tfe) {
@@ -61,32 +62,29 @@ public class XMLHandler {
 		
 		// The class loader that loaded the class
         ClassLoader classLoader = getClass().getClassLoader();
+        // the stream holding the file content
         InputStream inputStream = classLoader.getResourceAsStream(filePath);
 
-        // the stream holding the file content
-    
-			try {
-				Document document= documentBuilder.parse(inputStream);
-				Element root = document.getDocumentElement();
-				
-				elementNodes = root.getChildNodes();	
-			}
-			catch (SAXException e) 
-			{
-				e.printStackTrace();
-			}
-			catch (IOException e) 
-			{
-				e.printStackTrace();
-			}
-			catch (IllegalArgumentException e) 
-			{
-				System.out.println("File not found: " + filePath);
-			}
+		try {
+			Document document= documentBuilder.parse(inputStream);
+			Element root = document.getDocumentElement();
+			
+			elementNodes = root.getChildNodes();	
+		}
+		catch (SAXException e) 
+		{
+			e.printStackTrace();
+		}
+		catch (IOException e) 
+		{
+			e.printStackTrace();
+		}
+		catch (IllegalArgumentException e) 
+		{
+			System.out.println("File not found: " + filePath);
+		}
 		
 		return elementNodes;
 	}
 	
-	
-
 }

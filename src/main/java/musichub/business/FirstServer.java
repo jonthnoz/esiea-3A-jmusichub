@@ -8,6 +8,7 @@ public class FirstServer extends AbstractServer
 	private ServerSocket ss;
 	
 	public void connect(String ip) {
+		new ConsoleThread().start();
 		try {
 			//the server socket is defined only by a port (its IP is localhost)
 			ss = new ServerSocket (6666);  
