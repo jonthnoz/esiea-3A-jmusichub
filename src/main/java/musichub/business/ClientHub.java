@@ -1,40 +1,20 @@
 package musichub.business;
 
+import java.io.*;
 import java.util.*;
-import musichub.util.*;
-import org.w3c.dom.*;
-
-/*class SortByDate implements Comparator<Album>
-{
-	public int compare(Album a1, Album a2) {
-			return a1.getDate().compareTo(a2.getDate());
-	} 
-}
-
-class SortByGenre implements Comparator<Song>
-{
-	public int compare(Song s1, Song s2) {
-			return s1.getGenre().compareTo(s2.getGenre());
-	} 
-}
-
-class SortByAuthor implements Comparator<AudioElement>
-{
-	public int compare(AudioElement e1, AudioElement e2) {
-			return e1.getArtist().compareTo(e2.getArtist());
-	} 
-}*/
+import javax.sound.sampled.*;
 	
 public class ClientHub {
 	private List<Album> albums;
 	private List<PlayList> playlists;
 	private List<AudioElement> elements;
+	private AudioInputStream audioStream;
+    private Clip audioClip = null;
 	
 	public ClientHub (LinkedList<Album> albums, LinkedList<PlayList> playlists, LinkedList<AudioElement> elements) {
 		this.albums = albums;
 		this.playlists = playlists;
 		this.elements = elements;
-		
 	}
 	
 	
@@ -114,6 +94,51 @@ public class ClientHub {
 		
 	}
 
+	public boolean findElement (String elementTitle) {
+		AudioElement theElement = null;
+		for (AudioElement ae : elements) {
+			if (ae.getTitle().toLowerCase().equals(elementTitle.toLowerCase())) {
+				theElement = ae;
+				break;
+			}
+		}
+        if (theElement != null) {
+            return true;
+        }
+        else return false;
+	}
+	
+	public void playSound(InputStream in) {
+		InputStream bufferedIn = new BufferedInputStream(in);
+	 	try {
+	 		audioStream = AudioSystem.getAudioInputStream(bufferedIn);
+	        if (audioClip == null) {
+	        	audioClip = AudioSystem.getClip();
+	        	audioClip.addLineListener(new LineListener() {
+	        	    public void update(LineEvent myLineEvent) {
+	        	      if (myLineEvent.getType() == LineEvent.Type.STOP && audioClip.getMicrosecondPosition() == audioClip.getMicrosecondLength())
+	        	    	  audioClip.close();
+	        	    }
+	        	  });
+	        }
+	        if (audioClip.isActive()) 
+	        	audioClip.stop();
+	        if (audioClip.isOpen())
+	        	audioClip.close();
+	        audioClip.open(audioStream);
+	        audioClip.start();
+	 	} catch (UnsupportedAudioFileException ex) {
+            System.out.println("The specified audio file is not supported.");
+            ex.printStackTrace();
+        } catch (LineUnavailableException ex) {
+            System.out.println("Audio line for playing back is unavailable.");
+            ex.printStackTrace();
+        } catch (IOException ex) {
+            System.out.println("Error playing the audio file.");
+            ex.printStackTrace();
+        }      
+	}
+	
 	/*public void addElementToAlbum(String elementTitle, String albumTitle) throws NoAlbumFoundException, NoElementFoundException
 	{
 		Album theAlbum = null;
