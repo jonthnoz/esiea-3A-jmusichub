@@ -85,7 +85,6 @@ public class ConsoleThread extends Thread {
                     while (it.hasNext()) System.out.println(it.next().getTitle());
                     System.out.println("Song created!");
                     theHub.saveElements();
-                    theHub.checkAudioFiles();
                     printAvailableCommands();
                     choice = scan.nextLine();
                 break;
