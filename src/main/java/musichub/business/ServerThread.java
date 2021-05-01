@@ -61,7 +61,12 @@ public class ServerThread extends Thread {
 					}
 					else if (request.equals(SimpleClient.QUIT)) {
 						exit = true;
+						System.out.println("Bye");
 					}
+				} catch (EOFException | SocketException ex) {
+					System.out.println("Connexion lost with client: ");
+					ex.printStackTrace();
+					exit = true;
 				} catch (Exception ex) {
 					System.out.println("Server exception: " + ex.getMessage());
 					ex.printStackTrace();
@@ -71,11 +76,7 @@ public class ServerThread extends Thread {
         } catch (IOException ex) {
             System.out.println("Server exception: " + ex.getMessage());
             ex.printStackTrace();
-
-		}/*   catch (ClassNotFoundException ex) {
-            System.out.println("Server exception: " + ex.getMessage());
-            ex.printStackTrace();
-        }*/ finally {
+        } finally {
 			try {
 				output.close();
 				input.close();
