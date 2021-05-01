@@ -82,15 +82,16 @@ public class SimpleClient {
     					printAvailableCommands();
     					choice = scan.nextLine();
     				break;
-    				/*case 'u':
-    					//save elements, albums, playlists
-    					theHub.saveElements();
-    					theHub.saveAlbums();
-    					theHub.savePlayLists();
-    					System.out.println("Elements, albums and playlists saved!");
+    				case 'u':
+    					//load latest elements, albums, playlists
+    					output.writeObject(ASK_UPDATE);
+    					theHub.setAlbums((LinkedList<Album>) input.readObject());
+    					theHub.setPlaylists((LinkedList<PlayList>) input.readObject());
+    					theHub.setElements((LinkedList<AudioElement>) input.readObject());
+    					System.out.println("Elements, albums and playlists are up to date!");
     					printAvailableCommands();
     					choice = scan.nextLine();
-    				break;*/
+    				break;
     				case 's':
     					// play or queue a song from list of existing songs
     					System.out.println("Type the name of the song you wish to listen. Available songs: ");
@@ -221,12 +222,12 @@ public class SimpleClient {
 		System.out.println("g: display songs of an album, ordered by genre");
 		System.out.println("d: display songs of an album");
 		System.out.println("l: display audiobooks ordered by author");
-		//System.out.println("u: update elements, albums, playlists");
 		System.out.println("s: select a song to play");
 		System.out.println("a: select an album to play");
 		System.out.println("j: select a playlist to play");
 		System.out.println("p: play/pause the current track");
 		System.out.println("n: play the next song in the queue");
+    System.out.println("u: update elements, albums, playlists");
 		System.out.println("q: quit program");
 	}
 }

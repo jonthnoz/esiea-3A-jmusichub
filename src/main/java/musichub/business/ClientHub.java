@@ -20,6 +20,21 @@ public class ClientHub implements LineListener {
 		queue = new LinkedList<Clip>();
 	}
 	
+	public List<Album> getAlbums() {
+		return albums;
+	}
+	
+	public void setElements(LinkedList<AudioElement> elements) {
+		this.elements = elements;
+	}
+	
+	public void setAlbums(LinkedList<Album> albums) {
+		this.albums = albums;
+	}
+	
+	public void setPlaylists(LinkedList<PlayList> playlists) {
+		this.playlists = playlists;
+	}
 	
 	public Iterator<Album> albums() { 
 		return albums.listIterator();

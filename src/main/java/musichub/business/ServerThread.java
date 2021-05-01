@@ -34,6 +34,7 @@ public class ServerThread extends Thread {
 			output.writeObject(theHub.getAlbums());			//serialize and write the albums list object to the stream*/
 			output.writeObject(theHub.getPlaylists());		//serialize and write the playlists list object to the stream*/
 			output.writeObject(theHub.getElements());		//serialize and write the elements list object to the stream*/
+			output.reset();
 			
 			boolean exit = false;
 			while (!exit) {
@@ -51,10 +52,14 @@ public class ServerThread extends Thread {
 					    }
 					    in.close();
 					}
-					//if (request.equals(SimpleClient.ASK_UPDATE)) {
-						
-					//}
-					if (request.equals(SimpleClient.QUIT)) {
+					else if (request.equals(SimpleClient.ASK_UPDATE)) {
+						theHub.reloadAll();
+						output.writeObject(theHub.getAlbums());			//serialize and write the albums list object to the stream*/
+						output.writeObject(theHub.getPlaylists());		//serialize and write the playlists list object to the stream*/
+						output.writeObject(theHub.getElements());
+						output.reset();
+					}
+					else if (request.equals(SimpleClient.QUIT)) {
 						exit = true;
 						System.out.println("Bye");
 					}
