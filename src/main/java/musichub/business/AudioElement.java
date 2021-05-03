@@ -4,6 +4,9 @@ import java.util.*;
 import org.w3c.dom.*;
 import java.io.Serializable;
 
+/**
+ * basic structure of an audio element
+ */
 public abstract class AudioElement implements Serializable {
 	protected String  	title;
 	protected String 	artist;

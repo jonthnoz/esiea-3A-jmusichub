@@ -3,6 +3,10 @@ package musichub.business;
 import java.io.*;
 import org.w3c.dom.*;
 
+/**
+ * Contain all the methods for the AudioBook
+ * @see AudioElement
+ */
 public class AudioBook extends AudioElement {
 	private Language language;
 	private Category category;

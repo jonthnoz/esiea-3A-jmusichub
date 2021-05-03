@@ -5,8 +5,9 @@ import org.w3c.dom.*;
 import java.text.*;
 import java.io.Serializable;
 
-
-
+/**
+ * Contain all the methods for the album
+ */
 public class Album implements Serializable {
 	private String title;
 	private String artist;

@@ -2,7 +2,10 @@ package musichub.business;
 
 import org.w3c.dom.*;
 
-
+/**
+* Contain all the methods for the songs 
+* @see AudioElement
+*/
 public class Song extends AudioElement {
 	private Genre genre;
 	

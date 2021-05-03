@@ -2,6 +2,10 @@ package musichub.business;
 import java.io.*;  
 import java.net.*; 
 
+/**
+ * Accepts connections on port 6666 and launches ServerThreads
+ * @author Felicia Ionascu
+ */
 public class FirstServer extends AbstractServer
 {
 	private String ip = "localhost";
@@ -10,7 +14,7 @@ public class FirstServer extends AbstractServer
 	public void connect(String ip) {
 		try {
 			//the server socket is defined only by a port (its IP is localhost)
-			ss = new ServerSocket (6666);  
+			ss = new ServerSocket(6666);  
 			System.out.println("Server waiting for connection...");
 			while (true) {
 				Socket socket = ss.accept();//establishes connection 

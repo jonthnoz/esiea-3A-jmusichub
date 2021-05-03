@@ -14,7 +14,7 @@ public class SimpleClient {
 	public static final Integer ASK_UPDATE = 1;
 	public static final Integer QUIT = 2;
 
-	public void connect(String ip) //throws CommunicationErrorException
+	public void connect(String ip) 
 	{
 		int port = 6666;
         try  {
@@ -25,8 +25,10 @@ public class SimpleClient {
 			output = new ObjectOutputStream(socket.getOutputStream());
             input = new ObjectInputStream(socket.getInputStream());
             
+            //creat the stream that will handle the audio stream coming through the sockets
 			in = socket.getInputStream();
     		
+			// create the music manager with lists of albums, playlists and elements from the server
             theHub = new ClientHub((LinkedList<Album>) input.readObject(), (LinkedList<PlayList>) input.readObject(), (LinkedList<AudioElement>) input.readObject());
 			
     		System.out.println("Type h for available commands");
@@ -83,7 +85,7 @@ public class SimpleClient {
     					choice = scan.nextLine();
     				break;
     				case 'u':
-    					//load latest elements, albums, playlists
+    					//load latest albums, playlists, elements
     					output.writeObject(ASK_UPDATE);
     					theHub.setAlbums((LinkedList<Album>) input.readObject());
     					theHub.setPlaylists((LinkedList<PlayList>) input.readObject());
@@ -95,6 +97,7 @@ public class SimpleClient {
     				case 's':
     					// play or queue a song from list of existing songs
     					System.out.println("Type the name of the song you wish to listen. Available songs: ");
+    					// select a song
     					Iterator<AudioElement> itae = theHub.elements();
     					while (itae.hasNext()) {
     						AudioElement ae = itae.next();
@@ -103,6 +106,7 @@ public class SimpleClient {
     					String songTitle = scan.nextLine();
     					if (theHub.findElement(songTitle)) 
     					{ 	
+    						// retrieve it from server
     						output.writeObject(ASK_PLAY); 
     						output.writeObject(songTitle); 
     						output.reset();
@@ -111,6 +115,7 @@ public class SimpleClient {
     					        System.out.println("stream received"); // log
     					        System.out.println("Type f to add '" + songTitle + "' to the queue or x to start it");
         						String command = scan.nextLine();
+        						// select play now or queue
         						if (command.length() > 0 && command.charAt(0) == 'f') 
         								theHub.addSongToQueue(in);
         						else 
@@ -227,7 +232,7 @@ public class SimpleClient {
 		System.out.println("j: select a playlist to play");
 		System.out.println("p: play/pause the current track");
 		System.out.println("n: play the next song in the queue");
-    System.out.println("u: update elements, albums, playlists");
+		System.out.println("u: update elements, albums, playlists");
 		System.out.println("q: quit program");
 	}
 }

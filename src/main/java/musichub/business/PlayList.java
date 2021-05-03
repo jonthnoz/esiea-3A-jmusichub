@@ -4,6 +4,9 @@ import java.util.*;
 import org.w3c.dom.*;
 import java.io.Serializable;
 
+/**
+ * Contain all the methods for the playlist
+ */
 public class PlayList implements Serializable {
 	private String title;
 	private UUID uuid;

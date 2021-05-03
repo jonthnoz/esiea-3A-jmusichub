@@ -25,12 +25,17 @@ class SortByAuthor implements Comparator<AudioElement>
 	} 
 }
 	
+/**
+ * Contain all the methods to manipulate the MusicHub library
+ */
 public class MusicHub {
 	private List<Album> albums;
 	private List<PlayList> playlists;
 	private List<AudioElement> elements;
 	
-	//public static final String DIR = System.getProperty("user.dir");
+	/**
+	* Names of the xml files that we use
+	*/
 	public static final String ALBUMS_FILE_PATH = "albums.xml";
 	public static final String PLAYLISTS_FILE_PATH = "playlists.xml";
 	public static final String ELEMENTS_FILE_PATH = "elements.xml";
@@ -348,6 +353,9 @@ public class MusicHub {
 		xmlHandler.createXMLFile(document, ELEMENTS_FILE_PATH);
  	}	
 	
+	/**
+	 * Apply changes in the xml files to the MusicHub
+	 */
 	public void reloadAll() {
 		albums.clear(); 
 		playlists.clear();
@@ -356,15 +364,5 @@ public class MusicHub {
 		loadAlbums();
 		loadPlaylists();
 	}
-	/*
-	public void checkAudioFiles() {
-		String dirName = "files/";
-        
-        File fileName = new File(dirName);
-        File[] fileList = fileName.listFiles();
-        
-        for (File file: fileList) {
-            System.out.println(file.getName());
-        }
-	}*/
+
 }

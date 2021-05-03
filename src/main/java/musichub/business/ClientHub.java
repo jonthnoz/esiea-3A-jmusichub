@@ -3,7 +3,11 @@ package musichub.business;
 import java.io.*;
 import java.util.*;
 import javax.sound.sampled.*;
-	
+
+/**
+ * Contain all the methods to manipulate the jMusicHub library on a client
+ * @author Melissa Genovese, Jonathan Ozouf, Eden Loukakou-Bataille
+ */
 public class ClientHub implements LineListener {
 	private List<Album> albums;
 	private List<PlayList> playlists;
@@ -20,18 +24,38 @@ public class ClientHub implements LineListener {
 		queue = new LinkedList<Clip>();
 	}
 	
+	/**
+	 * Access the albums of the ClientHub
+	 * @return list containing all the albums
+	 * @author Jonathan Ozouf 
+	 */
 	public List<Album> getAlbums() {
 		return albums;
 	}
 	
+	/**
+	 * Assign a list of Songs and AudioBooks to the ClientHub
+	 * @param elements list of audio elements
+	 * @author Jonathan Ozouf 
+	 */
 	public void setElements(LinkedList<AudioElement> elements) {
 		this.elements = elements;
 	}
 	
+	/**
+	 * Assign a list of Albums to the ClientHub
+	 * @param albums list of albums
+	 * @author Jonathan Ozouf 
+	 */
 	public void setAlbums(LinkedList<Album> albums) {
 		this.albums = albums;
 	}
 	
+	/**
+	 * Assign a list of PlayLists to the ClientHub
+	 * @param playlists list of playlists
+	 * @author Jonathan Ozouf 
+	 */
 	public void setPlaylists(LinkedList<PlayList> playlists) {
 		this.playlists = playlists;
 	}
@@ -132,7 +156,12 @@ public class ClientHub implements LineListener {
 			}
 		return songsInPl;		
 	}
-
+	
+	/**
+	 * Check if an AudioElement is available
+	 * @param elementTitle title of the song wanted 
+	 * @author Jonathan Ozouf 
+	 */
 	public boolean findElement (String elementTitle) {
 		AudioElement theElement = null;
 		for (AudioElement ae : elements) {
@@ -147,18 +176,27 @@ public class ClientHub implements LineListener {
         else return false;
 	}
 	
+	/**
+	 * Play music in a Clip
+	 * @param in InpoutStream with the content of a wav file
+	 * @author Jonathan Ozouf
+	 */
 	public void startNewSound(InputStream in) {
 		InputStream bufferedIn = new BufferedInputStream(in);
 	 	try {
 	  	    audioStream = AudioSystem.getAudioInputStream(bufferedIn);
+	  	    // create the Clip if never done and make the ClientHub listen to the Line events
 	  	    if (audioClip == null) {
 	        	audioClip = AudioSystem.getClip();
 	        	audioClip.addLineListener(this);
 	  	    }
+	  	    // close any previous line
 			if (audioClip.isOpen()) 
 				audioClip.close();
+
 			audioClip.open(audioStream);
 			audioClip.start();
+			
 	 	} catch (UnsupportedAudioFileException ex) {
             System.out.println("The specified audio file is not supported.");
             ex.printStackTrace();
@@ -171,6 +209,10 @@ public class ClientHub implements LineListener {
 	    }    
 	}
 	
+	/**
+	 * Stop the music if it is playing or resume lecture if stopped
+	 * @author Jonathan Ozouf
+	 */
 	public void playPauseSound() {
 		if (audioClip != null) {
 			if (audioClip.isOpen()) {
@@ -186,6 +228,10 @@ public class ClientHub implements LineListener {
 		}
 	}
 	
+	/**
+	 * Start the  next music clip from the queue and set the audioClip value to it
+	 *@author Eden Loukakou-Bataille 
+	 */
 	public void playNext() {
 		if (!queue.isEmpty()) {
 		  	try {
@@ -207,6 +253,11 @@ public class ClientHub implements LineListener {
 		}
 	}
 	
+	/**
+	 * Create a Clip from an audio file in an InputStream a add it in queue
+	 * @param in in InpoutStream with the content of a wav file
+	 * @author Eden Loukakou-Bataille 
+	 */
 	public void addSongToQueue(InputStream in) {
 		InputStream bufferedIn = new BufferedInputStream(in);
 	 	try {
@@ -225,14 +276,7 @@ public class ClientHub implements LineListener {
 	        ex.printStackTrace();
 	    } 
 	}
-	
-	public void addAlbumToQueue(String albumTitle) throws NoAlbumFoundException {
 		
-	}
-	
-	public void addPlaylistToQueue(String PlaylistTitle) {
-		
-	}
 	
 	/**
      * Listens to the START and STOP events of the audio line.
@@ -241,6 +285,7 @@ public class ClientHub implements LineListener {
 	public void update(LineEvent event) {
 		LineEvent.Type type = event.getType();
 		if (type == LineEvent.Type.STOP) {
+			// log playback stopped
 			if (audioClip.getMicrosecondPosition() == audioClip.getMicrosecondLength()) 
 				playNext();
 		} else if (type == LineEvent.Type.START) {

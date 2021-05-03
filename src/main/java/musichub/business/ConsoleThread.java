@@ -5,6 +5,7 @@ import java.util.*;
 
 /**
  * This thread is responsible to handle server configuration.
+ * @author Johanne Scemama
  */
 public class ConsoleThread extends Thread {
  

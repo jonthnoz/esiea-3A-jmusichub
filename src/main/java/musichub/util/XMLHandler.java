@@ -11,7 +11,10 @@ import java.io.IOException;
 import java.io.File;
 import java.io.InputStream;
 
-
+/** 
+ * Class creating a DOM Object from XML file and vice versa
+ * @author Felicia Ionascu,  Jonathan Ozouf
+ */
 public class XMLHandler {
 	TransformerFactory transformerFactory;
 	Transformer transformer;
