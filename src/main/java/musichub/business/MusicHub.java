@@ -63,6 +63,18 @@ public class MusicHub {
 		return albums;
 	}
 	
+	public void setElements(LinkedList<AudioElement> elements) {
+		this.elements = elements;
+	}
+	
+	public void setAlbums(LinkedList<Album> albums) {
+		this.albums = albums;
+	}
+	
+	public void setPlaylists(LinkedList<PlayList> playlists) {
+		this.playlists = playlists;
+	}
+	
 	public void addElement(AudioElement element) {
 		elements.add(element);
 	}
