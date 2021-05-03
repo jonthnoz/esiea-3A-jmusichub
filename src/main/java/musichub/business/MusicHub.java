@@ -4,6 +4,9 @@ import java.util.*;
 import musichub.util.*;
 import org.w3c.dom.*;
 
+/**
+ * Sort the album by date
+ */
 class SortByDate implements Comparator<Album>
 {
 	public int compare(Album a1, Album a2) {
@@ -11,6 +14,9 @@ class SortByDate implements Comparator<Album>
 	} 
 }
 
+/**
+ * Sort the songs of an album by genre
+ */
 class SortByGenre implements Comparator<Song>
 {
 	public int compare(Song s1, Song s2) {
@@ -18,6 +24,9 @@ class SortByGenre implements Comparator<Song>
 	} 
 }
 
+/**
+ * Sort the audioelement by author
+ */
 class SortByAuthor implements Comparator<AudioElement>
 {
 	public int compare(AudioElement e1, AudioElement e2) {
@@ -50,19 +59,31 @@ public class MusicHub {
 		this.loadAlbums();
 		this.loadPlaylists();
 	}
-	
+	/**
+	 * Access to the audioElements
+	 *@return the list of the audio elements
+	 */
 	public List<AudioElement> getElements() {
 		return elements;
 	}
-	
+	/**
+	 * Access to the playlists
+	 *@return the list of the playlists
+	 */
 	public List<PlayList> getPlaylists() {
 		return playlists;
 	}
-	
+	/**
+	 * Access to the albums
+	 *@return the list of the albums
+	 */
 	public List<Album> getAlbums() {
 		return albums;
 	}
 	
+	/**
+	 * Select a specific element
+	 */
 	public void setElements(LinkedList<AudioElement> elements) {
 		this.elements = elements;
 	}
@@ -75,18 +96,30 @@ public class MusicHub {
 		this.playlists = playlists;
 	}
 	
+	/**
+	 * Add an element
+	 */
 	public void addElement(AudioElement element) {
 		elements.add(element);
 	}
 	
+	/**
+	 * Add an album
+	 */
 	public void addAlbum(Album album) {
 		albums.add(album);
 	}
 	
+	/**
+	 * Add playlist
+	 */
 	public void addPlaylist(PlayList playlist) {
 		playlists.add(playlist);
 	}
 	
+	/**
+	 * Delete a playlist
+	 */
 	public void deletePlayList(String playListTitle) throws NoPlayListFoundException {
 		
 		PlayList thePlayList = null;
