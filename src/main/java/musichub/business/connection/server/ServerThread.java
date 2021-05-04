@@ -1,8 +1,10 @@
-package musichub.business;
+package musichub.business.connection.server;
 
 import java.io.*;
 import java.net.*;
- 
+import musichub.business.media.*;
+import musichub.business.connection.client.*;
+
 /**
  * This thread is responsible to handle client connection.
  * @author Johanne Scemama, Jonathan Ozouf

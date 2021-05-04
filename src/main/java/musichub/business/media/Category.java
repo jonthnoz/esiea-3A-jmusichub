@@ -1,4 +1,4 @@
-package musichub.business;
+package musichub.business.media;
 
 /**
  * Possible values for the category of an AudioBook

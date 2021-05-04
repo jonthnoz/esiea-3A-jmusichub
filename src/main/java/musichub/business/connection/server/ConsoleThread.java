@@ -1,7 +1,8 @@
-package musichub.business;
+package musichub.business.connection.server;
 
 import java.util.*;
-
+import musichub.business.media.*;
+import musichub.business.exception.*;
 
 /**
  * This thread is responsible to handle server configuration.

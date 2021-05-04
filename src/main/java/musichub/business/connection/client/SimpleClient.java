@@ -1,7 +1,11 @@
-package musichub.business;
+package musichub.business.connection.client;
+
 import java.io.*;  
 import java.net.*; 
 import java.util.*;
+import musichub.business.media.*;
+import musichub.business.exception.*;
+import musichub.business.connection.server.*;
 
 public class SimpleClient {
 	
@@ -112,7 +116,7 @@ public class SimpleClient {
     						output.reset();
     						Integer response = (Integer) input.readObject();
     						if (response.equals(ServerThread.OK_RESPONSE)) {
-    					        System.out.println("stream received"); // log
+    					        //System.out.println("stream received"); // log
     					        System.out.println("Type f to add '" + songTitle + "' to the queue or x to start it");
         						String command = scan.nextLine();
         						// select play now or queue

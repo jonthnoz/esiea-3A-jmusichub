@@ -1,6 +1,7 @@
 package musichub.main;
 
-import musichub.business.*;
+import musichub.business.connection.server.*;
+import musichub.business.connection.client.*;
 
 /**
  * Main class, launching a server instance, a client console, or a server console according to the argument given at execution

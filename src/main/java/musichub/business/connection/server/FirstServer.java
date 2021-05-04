@@ -1,4 +1,5 @@
-package musichub.business;
+package musichub.business.connection.server;
+
 import java.io.*;  
 import java.net.*; 
 
