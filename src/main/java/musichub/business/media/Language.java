@@ -1,4 +1,4 @@
-package musichub.business;
+package musichub.business.media;
 
 /**
  * Values possible for the language of an audio book

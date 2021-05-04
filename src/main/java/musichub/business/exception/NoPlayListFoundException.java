@@ -1,4 +1,4 @@
-package musichub.business;
+package musichub.business.exception;
 
 import java.lang.Exception;
 

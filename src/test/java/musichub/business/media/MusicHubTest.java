@@ -1,12 +1,8 @@
-package musichub.business;
+package musichub.business.media;
 
-import java.util.LinkedList;
 import java.util.List;
-
+import musichub.business.exception.*;
 import org.junit.jupiter.api.*;
-
-import com.sun.net.httpserver.Authenticator.Result;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class MusicHubTest {

@@ -1,4 +1,4 @@
-package musichub.business;
+package musichub.business.media;
 
 /**
  * Values possible for the genre of a song

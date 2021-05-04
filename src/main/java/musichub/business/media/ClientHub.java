@@ -1,8 +1,9 @@
-package musichub.business;
+package musichub.business.media;
 
 import java.io.*;
 import java.util.*;
 import javax.sound.sampled.*;
+import musichub.business.exception.*;
 
 /**
  * Contain all the methods to manipulate the jMusicHub library on a client

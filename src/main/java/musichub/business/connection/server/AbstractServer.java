@@ -1,4 +1,4 @@
-package musichub.business;
+package musichub.business.connection.server;
 
 public abstract class AbstractServer
 {

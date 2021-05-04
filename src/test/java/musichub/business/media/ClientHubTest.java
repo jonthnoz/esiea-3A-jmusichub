@@ -1,9 +1,6 @@
-package musichub.business;
+package musichub.business.media;
 
 import java.util.LinkedList;
-import java.util.List;
-
-import javax.sound.sampled.LineEvent;
 
 import org.junit.jupiter.api.*;
 import static org.junit.jupiter.api.Assertions.*;
@@ -23,14 +20,6 @@ public class ClientHubTest {
     public void getAlbumsTest() {
         assertEquals(testHub.getAlbums(), testClientHub.getAlbums());              
     }
-    
-    /*
-    @Test
-    @DisplayName("When we add an album it should be at the end of the album list")   
-    private void addAlbum(Album album) {
-    	
-    }
-    */
     
     @Test
     @DisplayName("Ensure the albums are well sorted by date")
