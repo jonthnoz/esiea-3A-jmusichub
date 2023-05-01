@@ -3,7 +3,7 @@
 ### Music library project in java following a client-server structure
 ### *Maven* project with executable unit tests and doc generation
 #### Audio .wav files are in a files folder in the resources and the library is defined by 3 xml files: albums, playlists, elements.
-see *report.pdf* in *complentary* for more information.
+see [*report.pdf*](https://github.com/jonthnoz/esiea-3A-jmusichub/blob/2de282e9939f5aa9540a2148a102b0606b7def4e/complementary/Report.pdf) in *complentary* for more information.
 ___
 
 ###### V1.0.0
